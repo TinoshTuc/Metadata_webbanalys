@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Köttbullar med potatis och brun sås</title>
+</head>
+<body>
+
+    <h1>Köttbullar med potatis och brun sås</h1>
+
+    <h2>Ingredienser</h2>
+
+    <ul>
+        <li>500 g köttfärs</li>
+        <li>1 dl ströbröd</li>
+        <li>1 dl mjölk</li>
+        <li>1 gul lök</li>
+        <li>1 ägg</li>
+        <li>Salt och peppar</li>
+        <li>Potatis</li>
+        <li>Smör</li>
+        <li>Grädde</li>
+        <li>Buljong</li>
+        <li>Soja</li>
+        <li>Mjöl</li>
+    </ul>
+
+    <h2>Gör så här</h2>
+
+    <ol>
+        <li>Koka potatisen tills den är mjuk.</li>
+        <li>Blanda ströbröd och mjölk och låt stå några minuter.</li>
+        <li>Hacka löken fint.</li>
+        <li>Blanda köttfärs, lök, ägg, ströbröd, salt och peppar.</li>
+        <li>Forma smeten till köttbullar.</li>
+        <li>Stek köttbullarna i smör tills de är genomstekta.</li>
+        <li>Gör brun sås med smör, mjöl, buljong, grädde och lite soja.</li>
+        <li>Servera köttbullarna med potatis och brun sås.</li>
+    </ol>
+
+    <h2>Servering</h2>
+
+    <p>
+        Servera gärna med lingonsylt och inlagd gurka.
+    </p>
+
+</body>
+</html>
