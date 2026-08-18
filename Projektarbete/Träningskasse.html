@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <a href="Homepage.html">&larr; Tillbaka till alla kassar</a>
-    </header>
+    <div class="container">
+        <p><a href="Homepage.html">&larr; Tillbaka till alla kassar</a></p>
 
-    <main class="container">
-        <h1>Träningskassen</h1>
+        <!-- Rubrik och logga sida vid sida -->
+        <div class="title-logo-header">
+            <h1>Träningskassen</h1>
+            <img src="bilder/logotyp.jpg" alt="Logotyp" class="header-logo">
+        </div>
+
         <p>Proteinrika och välbalanserade middagar anpassade för en aktiv livsstil. 4 middagar för 4 personer.</p>
         <p><strong>Pris: 829 kr</strong></p>
 
         <section class="bag-recipes">
             <h2>Recept i Träningskassen</h2>
+            <hr>
             <ul class="recipe-list">
                 <li>
                     <a href="Recept/recept_gym_lax.html">
@@ -45,6 +49,14 @@
                 </li>
             </ul>
         </section>
-    </main>
+
+        <section class="bag-actions">
+            <button class="buy-button">Köp kassen</button>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        </footer>
+    </div>
 </body>
 </html>
