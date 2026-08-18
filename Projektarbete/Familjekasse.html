@@ -45,30 +45,30 @@
 
 
                 <article>
-                    <h3>Kyckling med ris</h3>
+                    <h3>Kyckling gryta med ris</h3>
 
                     <img
-                        src="bilder/kyckling.jpg"
-                        alt="Kyckling med ris"
+                        src="bilder/kycklinggryta.jpg"
+                        alt="Kyckling gryta med ris och chili"
                         width="300"
                     >
 
                     <p>
-                        Krämig kyckling med ris och grönsaker.
+                        Krämig kyckling gryta med ris och chili.
                     </p>
 
-                    <a href="recept/kyckling-med-ris.html">
+                    <a href="recept/recept_kyckling_gryta.html">
                         Se recept
                     </a>
                 </article>
 
 
                 <article>
-                    <h3>Köttfärssås med pasta</h3>
+                    <h3>Spagetti och Köttfärssås</h3>
 
                     <img
                         src="bilder/kottfarssas.jpg"
-                        alt="Köttfärssås med pasta"
+                        alt="Spagetti och köttfärssås"
                         width="300"
                     >
 
@@ -76,45 +76,45 @@
                         En klassisk och familjevänlig köttfärssås.
                     </p>
 
-                    <a href="recept/kottfarssas.html">
+                    <a href="recept/recept_spagetti_kottfarssas.html">
                         Se recept
                     </a>
                 </article>
 
 
                 <article>
-                    <h3>Lax med potatis</h3>
+                    <h3>Köttbullar med potatis och brunsås</h3>
 
                     <img
-                        src="bilder/lax.jpg"
-                        alt="Lax med potatis"
+                        src="bilder/kottbullar.jpg"
+                        alt="Köttbullar med potatis och brunsås"
                         width="300"
                     >
 
                     <p>
-                        Ugnsbakad lax med potatis och citron.
+                        En klassisk och familjevänlig köttbullar med potatis och brunsås.
                     </p>
 
-                    <a href="recept/lax-med-potatis.html">
+                    <a href="recept/recept_kottbullar_potatis_brunsas.html">
                         Se recept
                     </a>
                 </article>
 
 
                 <article>
-                    <h3>Tacos</h3>
+                    <h3>Oxfilé och potatisgratäng med rödvinssås och sparris</h3>
 
                     <img
-                        src="bilder/tacos.jpg"
-                        alt="Tacos"
+                        src="bilder/oxfilé.jpg"
+                        alt="Oxfilé med potatisgratäng och rödvinssås"
                         width="300"
                     >
 
                     <p>
-                        En klassisk fredagsfavorit för hela familjen.
+                        En lyxig och familjevänlig rätt, med goda smaker.
                     </p>
 
-                    <a href="recept/tacos.html">
+                    <a href="recept/recept_oxfilé_potatisgratäng_rödvinsås_sparris.html">
                         Se recept
                     </a>
                 </article>
@@ -123,17 +123,42 @@
                 <br>
 
 
-                <h2>Köp familjekasse</h2>
+           <h2>Köp familjekasse</h2>
 
-                <p>
-                    I familjekassen ingår veckans fyra maträtter.
-                </p>
+<p>
+    I familjekassen ingår veckans fyra maträtter.
+</p>
 
-                <button type="button">
-                    Köp familjekasse
-                </button>
+<div>
+    <button type="button" onclick="minskaAntal()">−</button>
 
-            </section>
+    <span id="antal">1</span> portioner
+
+    <button type="button" onclick="okaAntal()">+</button>
+</div>
+
+<br>
+
+<button type="button">
+    Köp familjekasse
+</button>
+
+<script>
+    let antal = 1;
+
+    function okaAntal() {
+        antal++;
+        document.getElementById("antal").textContent = antal;
+    }
+
+    function minskaAntal() {
+        if (antal > 1) {
+            antal--;
+            document.getElementById("antal").textContent = antal;
+        }
+    }
+</script>
+
 
 
             <!-- HÖGER SIDA -->
@@ -145,49 +170,49 @@
                 <ul>
 
                     <li>
-                        <a href="recept/kyckling-med-ris.html">
-                            Kyckling med ris
+                        <a href="recept/recept_fried_rice_med_rakor.html">
+                            Stekt ris med räkor
                         </a>
                     </li>
 
                     <li>
-                        <a href="recept/kottfarssas.html">
-                            Köttfärssås med pasta
+                        <a href="recept/recept_gym_stekt_ris_kyckling.html">
+                            Strekt ris med kycklingfärs och broccoli
                         </a>
                     </li>
 
                     <li>
-                        <a href="recept/lax-med-potatis.html">
-                            Lax med potatis
+                        <a href="recept/recept_veg_las.html">
+                            Vegetarisk lasagne
                         </a>
                     </li>
 
                     <li>
-                        <a href="recept/tacos.html">
-                            Tacos
+                        <a href="recept/recept_veg_kaldomar.html">
+                            Vegetariska kåldolmar
                         </a>
                     </li>
 
                     <li>
-                        <a href="recept/lasagne.html">
-                            Lasagne
+                        <a href="recept/recept_veg_gym.html">
+                            Nudlar med tofu, haricot verts och ägg
                         </a>
                     </li>
 
                     <li>
-                        <a href="recept/kycklinggryta.html">
-                            Kycklinggryta
+                        <a href="recept/recept_veg_curry.html">
+                            Vegetarisk curry
                         </a>
                     </li>
 
                     <li>
-                        <a href="recept/korvstroganoff.html">
+                        <a href="recept/recept_korvstroganoff.html">
                             Korvstroganoff
                         </a>
                     </li>
 
                     <li>
-                        <a href="recept/pannkakor.html">
+                        <a href="recept/recept_pankakor.html">
                             Pannkakor
                         </a>
                     </li>
