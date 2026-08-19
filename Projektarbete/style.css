@@ -51,3 +51,22 @@ li {
     width: 80px;
     height: auto;
 }
+/* Layout för rubrik + logotyp bredvid varandra */
+.title-logo-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 650px; /* Justera bredden om du vill ha loggan närmare eller längre ut */
+    margin-bottom: 10px;
+}
+
+.title-logo-header h1 {
+    margin: 0;
+}
+
+.header-logo {
+    width: 120px;         /* Ändra storlek här om du vill ha den större/mindre */
+    height: 120px;
+    object-fit: contain;  /* Håller loggans proportioner snygga */
+    border-radius: 50%;   /* Gör den rund om bilden är kvadratisk */
+}
