@@ -65,8 +65,21 @@ li {
 }
 
 .header-logo {
-    width: 120px;         /* Ändra storlek här om du vill ha den större/mindre */
-    height: 120px;
+    width: 190px;         /* Ändra storlek här om du vill ha den större/mindre */
+    height: 190px;
     object-fit: contain;  /* Håller loggans proportioner snygga */
     border-radius: 50%;   /* Gör den rund om bilden är kvadratisk */
+}
+
+/* Gör sociala medier-ikonerna små och snygga */
+.social-icon {
+    width: 40px;         /* Justera storlek här, t.ex. 20px - 30px */
+    height: auto;
+    vertical-align: middle; /* Gör att ikonen linjerar rakt med texten */
+    margin-left: 8px;
+    transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Liten zoom-effekt när man för musen över */
 }
