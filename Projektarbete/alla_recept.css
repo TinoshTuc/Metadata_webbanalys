@@ -1,4 +1,4 @@
-main > nav {
+main > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
@@ -11,9 +11,9 @@ article {
 }
 
 main article img {
-    width: 12rem;
-    height: 12rem;
-    object-fit: contain;
+    width: 10rem;
+    height: 10rem;
+    object-fit: cover;
     display: block;
-    margin: 0 auto;
+    border-radius: 0.5rem;
 }
