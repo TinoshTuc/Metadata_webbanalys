@@ -5,101 +5,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetariska kassen | Giga Bite</title>
-    <link rel="stylesheet" href="style_2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bags.css">
 </head>
 
 <body>
 
     <header>
-        <a href="index_v2.html">&larr; Tillbaka till alla kassar</a>
 
-        <nav>
-            <a href="alla_recept.html">Alla recept</a>
-        </nav>
+        <h1>Vegetariska kassen</h1>
+
+        <img src="bilder/logotyp.jpg" alt="Giga Bite logotyp" class="header-logo">
+
+        <p>
+            Upptäck vår vegetariska kasse med fyra läckra och näringsrika
+            rätter som passar perfekt för en hälsosam och varierad kost.
+            Varje rätt är noggrant utvald med fokus på smak, variation
+            och enkel matlagning.
+        </p>
+
+        <p>
+            <strong>4 middagar för 4 personer</strong>
+        </p>
+
     </header>
 
-    <main class="container">
 
-<div class="logo-title">
-    <img src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
-    <h1>Vegetariska kassen</h1>
-</div>
+    <main>
 
-        <section>
+        <nav>
 
-            <p>
-                Upptäck vår vegetariska kasse med fyra läckra och näringsrika rätter
-                som passar perfekt för en hälsosam och varierad kost.
-                Varje rätt är noggrant utvald med fokus på smak, variation och enkel matlagning.
-            </p>
+            <h2>Recept i Vegetariska kassen</h2>
 
-            <p><strong>4 middagar för 4 personer</strong></p>
-            <p><strong>Pris: 749 kr</strong></p>
-        </section>
-
-
-        <section class="bag-recipes">
-
-            <h2>Veckans fyra maträtter</h2>
-
-            <ul class="recipe-list">
+            <ul>
 
                 <li>
                     <a href="Recept/recept_veg_curry.html">
                         <strong>Vegetarisk curry</strong>
+                        <span>(28 g protein | 520 kcal)</span>
                     </a>
+
                     <p>
-                        En smakrik vegetarisk curry med paneerost som gärna serveras
-                        med ris, chutney och yoghurt.
+                        En smakrik vegetarisk curry med paneerost som gärna
+                        serveras med ris, chutney och yoghurt.
                     </p>
                 </li>
+
 
                 <li>
                     <a href="Recept/recept_veg_las.html">
                         <strong>Vegetarisk lasagne</strong>
+                        <span>(25 g protein | 500 kcal)</span>
                     </a>
+
                     <p>
                         En klassisk vegetarisk lasagne med spenat och ricotta
                         som passar perfekt som vardagsrätt.
                     </p>
                 </li>
 
+
                 <li>
                     <a href="Recept/recept_veg_gym_tofu.html">
                         <strong>Vegetarisk wok</strong>
+                        <span>(20 g protein | 450 kcal)</span>
                     </a>
+
                     <p>
                         En snabb vegetarisk wok med färska grönsaker och tofu.
                     </p>
                 </li>
 
+
                 <li>
                     <a href="Recept/recept_veg_kaldomar.html">
                         <strong>Vegetariska kåldolmar</strong>
+                        <span>(15 g protein | 400 kcal)</span>
                     </a>
+
                     <p>
-                        Smakrika vegetariska kåldolmar fyllda med ris och grönsaker,
-                        serverade med lingon.
+                        Smakrika vegetariska kåldolmar fyllda med ris och
+                        grönsaker, serverade med lingon.
                     </p>
                 </li>
 
             </ul>
 
-        </section>
+        </nav>
 
 
-        <section class="bag-actions">
+        <form>
 
-           <button>Köp kassen</button>
+            <h2>Köp Vegetariska kassen</h2>
 
-        </section>
+            <p>
+                I Vegetariska kassen ingår veckans fyra maträtter.
+            </p>
+
+            <p>
+                Pris: <strong>749 kr</strong>
+            </p>
+
+            <div class="quantity">
+
+                <button type="button" onclick="minskaAntal()">−</button>
+
+                <span id="antal">1</span> kasse
+
+                <button type="button" onclick="okaAntal()">+</button>
+
+            </div>
+
+            <br>
+
+            <button type="button" class="buy-button">
+                Köp Vegetariska kassen
+            </button>
+
+        </form>
 
     </main>
 
 
+    <aside>
+
+        <nav>
+
+            <h2>Andra recept</h2>
+
+            <ul>
+
+                <li>
+                    <a href="recept/recept_fried_rice_med_rakor.html">
+                        Stekt ris med räkor
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_kyckling_gryta.html">
+                        Kycklinggryta med ris
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_spagetti_kottfarssas.html">
+                        Spaghetti och köttfärssås
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_kottbullar_potatis_brunsas.html">
+                        Köttbullar med potatis och brunsås
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_oxfilé_potatisgratäng_rödvinsås_sparris.html">
+                        Oxfilé med potatisgratäng
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_gym_stekt_ris_kyckling.html">
+                        Stekt ris med kycklingfärs och broccoli
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_korvstroganoff.html">
+                        Korvstroganoff
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_pankakor.html">
+                        Pannkakor
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+
     <footer>
-        <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+
+        <b>Följ oss på sociala medier:</b>
+
+        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank">
+            <img src="bilder/youtube.png" alt="YouTube">
+        </a>
+
+        <hr>
+
+        <p>
+            &copy; 2026 Giga Bite. Alla rättigheter förbehållna.
+        </p>
+
+        <p>
+            Kontakt: Info@gigabite.se |
+            Adress: Giga Bite AB, Storgatan 123,
+            123 45 Stockholm |
+            Telefon: 080-132 546 87
+        </p>
+
     </footer>
+
+
+    <script>
+
+        let antal = 1;
+
+        function okaAntal() {
+            antal++;
+            document.getElementById("antal").textContent = antal;
+        }
+
+        function minskaAntal() {
+            if (antal > 1) {
+                antal--;
+                document.getElementById("antal").textContent = antal;
+            }
+        }
+
+    </script>
 
 </body>
 
