@@ -1,0 +1,53 @@
+.recipe-page {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.recipe-logo-link {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    z-index: 10;
+}
+
+.recipe-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+}
+
+.recipe-image {
+    width: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.recipe-intro {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.recipe-description {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.4;
+}
+
+.recipe-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 30px;
+}
+
+.recipe-details p {
+    margin: 0;
+}
