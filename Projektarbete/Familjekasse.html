@@ -6,37 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Familjekassen | MiddagsGott</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bags.css">
 </head>
 
 <body>
-
-    <div class="container">
-
-        <p><a href="Homepage.html">&larr; Tillbaka till alla kassar</a></p>
-
-        <!-- Rubrik och logga sida vid sida -->
-        <div class="title-logo-header">
-            <h1>Familjekassen</h1>
+    <header>
+             <h1>Familjekassen</h1>
             <img src="bilder/logotyp.jpg" alt="Logotyp" class="header-logo">
-        </div>
+             <p>
+                God och enkel mat för hela familjen.
+                Fyra utvalda maträtter som passar perfekt
+                för veckans middagar.
+            </p>
+    </header>
 
-        <p>
-            God och enkel mat för hela familjen.
-            Fyra utvalda maträtter som passar perfekt
-            för veckans middagar.
-        </p>
+    <main>
+        <nav>
+            <h2>
+                Recept i Familjekassen
 
-        <p><strong>Pris: 749 kr</strong></p>
-
-
-        <section class="bag-recipes">
-
-            <h2>Recept i Familjekassen</h2>
-
-            <hr>
-
-            <ul class="recipe-list">
-
+            </h2>
+            <ul>
                 <li>
                     <a href="recept/recept_kyckling_gryta.html">
                         <strong>Kycklinggryta med ris</strong>
@@ -64,20 +54,13 @@
                         <span>Oxfilé med rödvinssås och sparris</span>
                     </a>
                 </li>
-
             </ul>
-
-        </section>
-
-
-        <section class="bag-actions">
-
+        </nav>
+        <form>
             <h2>Köp Familjekassen</h2>
-
             <p>
                 I Familjekassen ingår veckans fyra maträtter.
             </p>
-
             <div class="quantity">
                 <button type="button" onclick="minskaAntal()">−</button>
 
@@ -91,14 +74,11 @@
             <button type="button" class="buy-button">
                 Köp Familjekassen
             </button>
-
-        </section>
-
-
-        <section class="other-recipes">
-
+        </form>
+    </main>
+    <aside>
+        <nav>
             <h2>Andra recept</h2>
-
             <ul>
 
                 <li>
@@ -150,19 +130,18 @@
                 </li>
 
             </ul>
+        </nav>
+    </aside>
+    <footer>
+        <b>Följ oss på sociala medier:</b>
+        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank">
+            <img src="bilder/youtube.png" alt="YouTube">
+        </a>
+        <hr>
+        <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <p>Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87</p>
 
-        </section>
-
-
-        <footer>
-
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
-
-        </footer>
-
-    </div>
-
-
+    </footer>
     <script>
 
         let antal = 1;
