@@ -1,0 +1,41 @@
+.kasse-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.kasse-kort {
+    border: 1px solid #f1b35a;
+    border-radius: 8px;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.kasse-image {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+.kasse-kort h3,
+.kasse-kort p,
+.kasse-kort a {
+    margin: 15px;
+}
+
+.kasse-knapp {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #f59a23;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.kasse-knapp:hover {
+    background-color: #d97f0d;
+}
+

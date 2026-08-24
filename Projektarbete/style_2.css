@@ -1,13 +1,44 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+*:not(dialog) {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     max-width: 900px;
     margin: 40px auto;
     padding: 0 20px;
-    line-height: 1.6;
 
     background-color: #fffaf3;
     color: #3a2f2a;
 }
+
 
 header {
     margin-bottom: 40px;
