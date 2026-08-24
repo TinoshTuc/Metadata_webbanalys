@@ -1,89 +1,238 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Träningskassen | MiddagsGott</title>
-    <link rel="stylesheet" href="style_2.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bags.css">
 </head>
+
 <body>
-    <div class="container">
-        <p><a href="Homepage.html">&larr; Tillbaka till alla kassar</a></p>
 
-        <!-- Rubrik och logga sida vid sida -->
-        <div class="logo-title">
-        <img src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
+    <header>
+
         <h1>Träningskassen</h1>
-        </div>
 
-        <p>Proteinrika och välbalanserade middagar anpassade för en aktiv livsstil. 4 middagar för 4 personer.</p>
-        <p><strong>Pris: 829 kr</strong></p>
+        <img src="bilder/logotyp.jpg" alt="Giga Bite logotyp" class="header-logo">
 
-        <section class="bag-recipes">
+        <p>
+            Proteinrika och välbalanserade middagar anpassade för
+            en aktiv livsstil. 4 middagar för 4 personer.
+        </p>
+
+    </header>
+
+
+    <main>
+
+        <nav>
+
             <h2>Recept i Träningskassen</h2>
-            <hr>
-            <ul class="recipe-list">
+
+            <ul>
+
                 <li>
                     <a href="Recept/recept_gym_lax.html">
-                        <strong>Cajungrillad lax med sötpotatismos och salsa</strong> 
+                        <strong>Cajungrillad lax med sötpotatismos och salsa</strong>
                         <span>(34 g protein | 580 kcal)</span>
                     </a>
+
                     <p>
-                        Cajungrillad lax med sötpotatismos som serveras med en härlig salsa. 
-                        Funkar lika bra till vuxna som för barn..
+                        Cajungrillad lax med sötpotatismos som serveras
+                        med en härlig salsa. Funkar lika bra till vuxna
+                        som för barn.
                     </p>
                 </li>
 
 
                 <li>
                     <a href="Recept/recept_gym_köttfärslimpa.html">
-                        <strong>Enkel köttfärslimpa med tomat och rostad lök</strong> 
+                        <strong>Enkel köttfärslimpa med tomat och rostad lök</strong>
                         <span>(33 g protein | 530 kcal)</span>
                     </a>
+
                     <p>
-                        Köttfärslimpa är bekväm middagsmat som sköter sig själv i ugnen och i det här enkla receptet så smaksätt blandfärsen med tomatpesto och rostad lök. 
+                        Köttfärslimpa är bekväm middagsmat som sköter sig
+                        själv i ugnen. I det här enkla receptet smaksätts
+                        blandfärsen med tomatpesto och rostad lök.
                         Minsta möjliga tillagningstid och goda smaker.
-                        Bättre kan det väl inte bli?
                     </p>
                 </li>
 
 
                 <li>
                     <a href="Recept/recept_gym_stekt_ris_kyckling.html">
-                        <strong>Stekt ris med kycklingfärs och broccoli</strong> 
+                        <strong>Stekt ris med kycklingfärs och broccoli</strong>
                         <span>(35 g protein | 495 kcal)</span>
                     </a>
+
                     <p>
-                        Stekt ris med kycklingfärs, ägg, purjo och broccoli. 
-                        Smaksätt med ingefära, sambal och soja. Toppa med jordnötter, koriander och lime
+                        Stekt ris med kycklingfärs, ägg, purjo och broccoli.
+                        Smaksätt med ingefära, sambal och soja. Toppa med
+                        jordnötter, koriander och lime.
                     </p>
                 </li>
 
 
                 <li>
                     <a href="Recept/recept_veg_gym_tofu.html">
-                        <strong>Nudlar med tofu, haricots verts och ägg</strong> 
+                        <strong>Nudlar med tofu, haricots verts och ägg</strong>
                         <span>(25 g protein | 520 kcal)</span>
                     </a>
+
                     <p>
-                        Gör en asiatisk nudelwok med tofu, stekt ägg och krispiga haricot verts. 
-                        Denna snabba och goda vardagsrätt får smak av sweet chilisås och koriander. 
+                        Gör en asiatisk nudelwok med tofu, stekt ägg och
+                        krispiga haricots verts. Denna snabba och goda
+                        vardagsrätt får smak av sweet chilisås och koriander.
                         Pressa över lite limejuice vid servering.
                     </p>
-
                 </li>
 
             </ul>
 
-        </section>
+        </nav>
 
-        <section class="bag-actions">
-            <button class="buy-button">Köp kassen</button>
-        </section>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
-        </footer>
-    </div>
+        <form>
+
+            <h2>Köp Träningskassen</h2>
+
+            <p>
+                I Träningskassen ingår veckans fyra maträtter.
+            </p>
+
+            <p>
+                Pris: <strong>829 kr</strong>
+            </p>
+
+            <div class="quantity">
+
+                <button type="button" onclick="minskaAntal()">−</button>
+
+                <span id="antal">1</span> kasse
+
+                <button type="button" onclick="okaAntal()">+</button>
+
+            </div>
+
+            <br>
+
+            <button type="button" class="buy-button">
+                Köp Träningskassen
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <aside>
+
+        <nav>
+
+            <h2>Andra recept</h2>
+
+            <ul>
+
+                <li>
+                    <a href="recept/recept_fried_rice_med_rakor.html">
+                        Stekt ris med räkor
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_kyckling_gryta.html">
+                        Kycklinggryta med ris
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_spagetti_kottfarssas.html">
+                        Spaghetti och köttfärssås
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_kottbullar_potatis_brunsas.html">
+                        Köttbullar med potatis och brunsås
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_veg_las.html">
+                        Vegetarisk lasagne
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_veg_kaldomar.html">
+                        Vegetariska kåldolmar
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_veg_curry.html">
+                        Vegetarisk curry
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_pankakor.html">
+                        Pannkakor
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+
+    <footer>
+
+        <b>Följ oss på sociala medier:</b>
+
+        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank">
+            <img src="bilder/youtube.png" alt="YouTube">
+        </a>
+
+        <hr>
+
+        <p>
+            &copy; 2026 Giga Bite. Alla rättigheter förbehållna.
+        </p>
+
+        <p>
+            Kontakt: Info@gigabite.se |
+            Adress: Giga Bite AB, Storgatan 123,
+            123 45 Stockholm |
+            Telefon: 080-132 546 87
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        let antal = 1;
+
+        function okaAntal() {
+            antal++;
+            document.getElementById("antal").textContent = antal;
+        }
+
+        function minskaAntal() {
+            if (antal > 1) {
+                antal--;
+                document.getElementById("antal").textContent = antal;
+            }
+        }
+
+    </script>
+
 </body>
+
 </html>

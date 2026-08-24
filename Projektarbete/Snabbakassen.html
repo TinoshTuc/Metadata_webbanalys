@@ -1,44 +1,34 @@
 <!DOCTYPE html>
-
 <html lang="sv">
 
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Snabbkassen | MiddagsGott</title>
-
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="bags.css">
 </head>
 
 <body>
 
-    <div class="container">
+    <header>
+        <h1>Snabbkassen</h1>
 
-        <p><a href="Homepage.html">&larr; Tillbaka till alla kassar</a></p>
+        <img src="bilder/logotyp.jpg" alt="Logotyp" class="header-logo">
 
-
-        <!-- Rubrik och logga sida vid sida -->
-        <div class="title-logo-header">
-            <h1>Snabbkassen</h1>
-            <img src="bilder/logotyp.jpg" alt="Logotyp" class="header-logo">
-        </div>
-
-        <p>Snabba, smakrika och enkla middagar som kan lagas på under 30 minuter. 4 middagar för 4 personer.</p>
-
-        <p><strong>Pris: 749 kr</strong></p>
+        <p>
+            Snabba, smakrika och enkla middagar som kan lagas
+            på under 30 minuter. 4 middagar för 4 personer.
+        </p>
+    </header>
 
 
-        <section class="bag-recipes">
+    <main>
 
+        <nav>
             <h2>Recept i Snabbkassen</h2>
 
-            <hr>
-
-            <ul class="recipe-list">
+            <ul>
 
                 <li>
                     <a href="Recept/recept_fried_rice_med_rakor.html">
@@ -69,24 +59,146 @@
                 </li>
 
             </ul>
-
-        </section>
-
-
-        <section class="bag-actions">
-
-            <button class="buy-button">Köp kassen</button>
-
-        </section>
+        </nav>
 
 
-        <footer>
+        <form>
 
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+            <h2>Köp Snabbkassen</h2>
 
-        </footer>
+            <p>
+                I Snabbkassen ingår veckans fyra maträtter.
+            </p>
 
-    </div>
+            <p>
+                Pris: <strong>749 kr</strong>
+            </p>
+
+            <div class="quantity">
+
+                <button type="button" onclick="minskaAntal()">−</button>
+
+                <span id="antal">1</span> kasse
+
+                <button type="button" onclick="okaAntal()">+</button>
+
+            </div>
+
+            <br>
+
+            <button type="button" class="buy-button">
+                Köp Snabbkassen
+            </button>
+
+        </form>
+
+    </main>
+
+
+    <aside>
+
+        <nav>
+
+            <h2>Andra recept</h2>
+
+            <ul>
+
+                <li>
+                    <a href="recept/recept_kyckling_gryta.html">
+                        Kycklinggryta med ris
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_spagetti_kottfarssas.html">
+                        Spaghetti och köttfärssås
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_kottbullar_potatis_brunsas.html">
+                        Köttbullar med potatis och brunsås
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_oxfilé_potatisgratäng_rödvinsås_sparris.html">
+                        Oxfilé med potatisgratäng
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_veg_las.html">
+                        Vegetarisk lasagne
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_veg_kaldomar.html">
+                        Vegetariska kåldolmar
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_veg_curry.html">
+                        Vegetarisk curry
+                    </a>
+                </li>
+
+                <li>
+                    <a href="recept/recept_pankakor.html">
+                        Pannkakor
+                    </a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </aside>
+
+
+    <footer>
+
+        <b>Följ oss på sociala medier:</b>
+
+        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank">
+            <img src="bilder/youtube.png" alt="YouTube">
+        </a>
+
+        <hr>
+
+        <p>
+            &copy; 2026 Giga Bite. Alla rättigheter förbehållna.
+        </p>
+
+        <p>
+            Kontakt: Info@gigabite.se |
+            Adress: Giga Bite AB, Storgatan 123,
+            123 45 Stockholm |
+            Telefon: 080-132 546 87
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        let antal = 1;
+
+        function okaAntal() {
+            antal++;
+            document.getElementById("antal").textContent = antal;
+        }
+
+        function minskaAntal() {
+            if (antal > 1) {
+                antal--;
+                document.getElementById("antal").textContent = antal;
+            }
+        }
+
+    </script>
 
 </body>
 
