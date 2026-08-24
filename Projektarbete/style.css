@@ -15,25 +15,6 @@ header {
     justify-content: center;
 }
 
-main > div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-}
-
-article {
-    border: 0.1rem solid #f1b35a;
-    border-radius: 0.5rem;
-    padding: 1rem;
-}
-
-main article img {
-    width: 12rem;
-    height: 12rem;
-    object-fit: contain;
-    display: block;
-    margin: 0 auto;
-}
 
 h1 {
     font-size: 3rem;
@@ -80,11 +61,6 @@ header img {
     height: auto;
 }
 
-main article img {
-    width: 12rem;
-    height: 12rem;
-    object-fit: contain;
-}
 
 footer img {
     width: 2.5rem;
@@ -92,9 +68,21 @@ footer img {
     vertical-align: middle;
 }
 
-
-
 .social-icon:hover {
     transform: scale(1.1); /* Makes a small zoom effect when hovering over the icon */
+}
+
+button {
+    padding: 0.6rem 1.1rem;
+    background-color: #f59a23;
+    color: white;
+    border: none;
+    border-radius: 0.4rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d97f0d;
 }
 
