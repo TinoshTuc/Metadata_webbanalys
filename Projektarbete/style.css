@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     max-width: 800px;
@@ -22,27 +30,18 @@ h1 {
 
 h2 {
     font-size: 2rem;
-}
-
-h3 {
-    font-size: 1.5rem;
-}
-
-p {
-    font-size: 1rem;
-}
-
-h2 {
     margin-top: 35px;
     border-bottom: 2px solid #cccccc;
     padding-bottom: 5px;
 }
 
 h3 {
+    font-size: 1.5rem;
     margin-top: 2px;
 }
 
 p {
+    font-size: 1rem;
     margin-bottom: 12px;
 }
 
