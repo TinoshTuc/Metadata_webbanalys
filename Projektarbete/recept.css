@@ -19,14 +19,14 @@ main > a img {
     display: block;
 }
 
-main > div:first-of-type {
+main > section:first-of-type {
     display: flex;
     gap: 20px;
     align-items: flex-start;
     margin-bottom: 15px;
 }
 
-main > div:first-of-type img {
+main > section:first-of-type img {
     width: 300px;
     min-width: 300px;
     max-width: 300px;
@@ -35,7 +35,7 @@ main > div:first-of-type img {
     object-fit: cover;
 }
 
-main > div:first-of-type p {
+main > section:first-of-type p {
     margin: 0;
     font-size: 1.25rem;
     line-height: 1.4;
