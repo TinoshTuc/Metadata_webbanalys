@@ -79,9 +79,9 @@
                 I Familjekassen ingår veckans fyra maträtter.
             </p>
             <p>
-                Pris: <strong>899 kr</strong>
+            Pris: <strong id="pris">899 kr</strong>
             </p>
-            
+
             <div class="quantity">
                 <button type="button" onclick="minskaAntal()">−</button>
 
@@ -163,24 +163,28 @@
         <p>Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87</p>
 
     </footer>
-    <script>
+      <script>
+    let antal = 1;
+    const prisPerKasse = 899;
 
-        let antal = 1;
+    function uppdateraKassa() {
+        document.getElementById("antal").textContent = antal;
+        document.getElementById("pris").textContent =
+            (antal * prisPerKasse) + " kr";
+    }
 
-        function okaAntal() {
-            antal++;
-            document.getElementById("antal").textContent = antal;
+    function okaAntal() {
+        antal++;
+        uppdateraKassa();
+    }
+
+    function minskaAntal() {
+        if (antal > 1) {
+            antal--;
+            uppdateraKassa();
         }
-
-        function minskaAntal() {
-            if (antal > 1) {
-                antal--;
-                document.getElementById("antal").textContent = antal;
-            }
-        }
-
-    </script>
-
+    }
+</script>
 </body>
 
 </html>

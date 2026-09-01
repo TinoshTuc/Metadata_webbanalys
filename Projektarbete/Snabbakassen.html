@@ -86,7 +86,7 @@
             </p>
 
             <p>
-                Pris: <strong>749 kr</strong>
+            Pris: <strong id="pris">749 kr</strong>
             </p>
 
             <div class="quantity">
@@ -198,22 +198,27 @@
 
 
     <script>
+    let antal = 1;
+    const prisPerKasse = 749;
 
-        let antal = 1;
+    function uppdateraKassa() {
+        document.getElementById("antal").textContent = antal;
+        document.getElementById("pris").textContent =
+            (antal * prisPerKasse) + " kr";
+    }
 
-        function okaAntal() {
-            antal++;
-            document.getElementById("antal").textContent = antal;
+    function okaAntal() {
+        antal++;
+        uppdateraKassa();
+    }
+
+    function minskaAntal() {
+        if (antal > 1) {
+            antal--;
+            uppdateraKassa();
         }
-
-        function minskaAntal() {
-            if (antal > 1) {
-                antal--;
-                document.getElementById("antal").textContent = antal;
-            }
-        }
-
-    </script>
+    }
+</script>
 
 </body>
 
