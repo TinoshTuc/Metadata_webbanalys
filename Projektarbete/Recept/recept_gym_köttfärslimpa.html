@@ -28,27 +28,27 @@
                 >
             </a>
         </header>
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
             
-            <h1>Enkel köttfärslimpa med tomat och rostad lök</h1>
+            <h1 itemprop="name">Enkel köttfärslimpa med tomat och rostad lök</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/Gym_köttfärslimpa.png" 
                     alt="Enkel köttfärslimpa med tomat och rostad lök"
                 >
 
-                <p>
+                <p itemprop="description">
                     En saftig och smakrik köttfärslimpa med tomatpesto och rostad lök, serverad med nykokt potatis och en krämig tomatsås. En klassisk vardagsrätt som är enkel att laga.
                 </p>
             </section>
 
             <p>
-                Förberedelse: 15 minuter | Tillagning: 20 minuter | Total tid: 35 minuter | Svårighetsgrad: Enkel | 4 portioner
+                Förberedelse: <time itemprop="prepTime" datetime="PT15M">15 minuter</time> | Tillagning: <time itemprop="cookTime" datetime="PT20M">20 minuter</time> | Total tid: <time itemprop="totalTime" datetime="PT35M">35 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Enkel</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
-            <p>
-                Näringsvärde per portion: 530 kcal | Protein: 33 g
+            <p itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                Näringsvärde per portion:<span itemprop="calories"> 530 kcal</span> | <span itemprop="proteinContent">Protein: 33 g</span>
             </p>
 
             <div>
@@ -56,26 +56,26 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>500 g Nötfärs (10%)</li>
-                        <li>900 g Fast potatis</li>
-                        <li>1,5 dl Rostad lök</li>
-                        <li>1 dl Tomatpesto (röd pesto)</li>
-                        <li>2,5 dl Flora Mat 4% (matlagningsbas)</li>
-                        <li>Salt och nymalen svartpeppar</li>
+                        <li itemprop="recipeIngredient">500 g Nötfärs (10%)</li>
+                        <li itemprop="recipeIngredient">900 g Fast potatis</li>
+                        <li itemprop="recipeIngredient">1,5 dl Rostad lök</li>
+                        <li itemprop="recipeIngredient">1 dl Tomatpesto (röd pesto)</li>
+                        <li itemprop="recipeIngredient">2,5 dl Flora Mat 4% (matlagningsbas)</li>
+                        <li itemprop="recipeIngredient">Salt och nymalen svartpeppar</li>
                     </ul>
 
                     <h3>Till servering</h3>
 
                     <ul>
-                        <li>0,5 st Cosmopolitansallad (eller krispsallad)</li>
-                        <li>Kokt potatis</li>
+                        <li itemprop="recipeIngredient">0,5 st Cosmopolitansallad (eller krispsallad)</li> <!-- ska det vara den här mikro när det är serveringsförslag?-->
+                        <li itemprop="recipeIngredient">Kokt potatis</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Instruktioner</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Sätt ugnen på 225°C.</li>
                         <li>Skala och koka potatisen i lättsaltat vatten.</li>
                         <li>Blanda nötfärsen med rostad lök och hälften av tomatpeston. Krydda med lite salt och svartpeppar.</li>
