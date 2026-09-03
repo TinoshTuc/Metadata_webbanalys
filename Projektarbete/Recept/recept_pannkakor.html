@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på klassiska svenska pannkakor som serveras med sylt, grädde eller färska bär från Giga Bite.">
         <title>Pannkakor</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,23 +35,23 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
             
-            <h1>Pannkakor</h1>
+            <h1 itemprop="name">Pannkakor</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/pannkakor.jpg" 
                     alt="Pannkakor"
                 >
 
-                <p>
+                <p itemprop="description">
                     Klassiska svenska pannkakor som passar perfekt att servera med sylt, grädde eller färska bär.
                 </p>
             </section>
 
             <p>
-                Tillagning: cirka 30 minuter | Svårighetsgrad: Lätt | 4 portioner
+                Tillagning: <time itemprop="cookTime" datetime="PT30M">cirka 30 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Lätt</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
             <div>
@@ -55,30 +59,30 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>3 dl vetemjöl</li>
-                        <li>6 dl mjölk</li>
-                        <li>3 ägg</li>
-                        <li>1/2 tsk salt</li>
-                        <li>2 msk smör</li>
-                        <li>1 msk socker</li>
-                        <li>5 dl grädde</li>
-                        <li>Sylt</li>
-                        <li>500 g färska bär</li>
+                        <li itemprop="recipeIngredient">3 dl vetemjöl</li>
+                        <li itemprop="recipeIngredient">6 dl mjölk</li>
+                        <li itemprop="recipeIngredient">3 ägg</li>
+                        <li itemprop="recipeIngredient">1/2 tsk salt</li>
+                        <li itemprop="recipeIngredient">2 msk smör</li>
+                        <li itemprop="recipeIngredient">1 msk socker</li>
+                        <li itemprop="recipeIngredient">5 dl grädde</li>
+                        <li itemprop="recipeIngredient">Sylt</li>
+                        <li itemprop="recipeIngredient">500 g färska bär</li>
                     </ul>
 
                     <h3>Servering</h3>
 
                     <ul>
-                        <li>Sylt</li>
-                        <li>Grädde</li>
-                        <li>Färska bär</li>
+                        <li itemprop="recipeIngredient">Sylt</li>
+                        <li itemprop="recipeIngredient">Grädde</li>
+                        <li itemprop="recipeIngredient">Färska bär</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Gör så här</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Blanda vetemjöl och salt i en bunke.</li>
                         <li>Vispa ner hälften av mjölken tills smeten är slät.</li>
                         <li>Tillsätt resten av mjölken och äggen.</li>
@@ -92,10 +96,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

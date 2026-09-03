@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på smakrik vegetarisk curry med paneerost, kikärtor, spenat och tikka masala från Giga Bite.">
         <title>Vegetarisk curry</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,27 +35,27 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
 
-            <h1>Vegetarisk curry</h1>
+            <h1 itemprop="name">Vegetarisk curry</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/veg_curry.jpg" 
                     alt="Vegetarisk curry"
                 >
 
-                <p>
+                <p itemprop="description">
                     En smakrik vegetarisk curry med paneerost som serveras gärna med ris, chutney och yoghurt.
                 </p>
             </section>
 
             <p>
-                Förberedelse: 5 minuter | Tillagning: 15 minuter | Total tid: 20 minuter | Svårighetsgrad: Lätt | 4 portioner
+                Förberedelse: <time itemprop="prepTime" datetime="PT5M">5 minuter</time> | Tillagning: <time itemprop="cookTime" datetime="PT15M">15 minuter</time> | Total tid: <time itemprop="totalTime" datetime="PT20M">20 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Lätt</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
-            <p>
-                Näringsvärde per portion: 581 kcal
+            <p itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                Näringsvärde per portion:<span itemprop="calories"> 581 kcal</span>
             </p>
 
             <div>
@@ -59,32 +63,32 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>225 g Paneerost</li>
-                        <li>3 msk Tomatpuré</li>
-                        <li>35 g Tikka masala kryddmix</li>
-                        <li>1 tsk Honung</li>
-                        <li>3 dl Vatten</li>
-                        <li>1 msk Smör</li>
-                        <li>400 g Kikärtor</li>
-                        <li>130 g Babyspenat</li>
-                        <li>1 st Lime, pressad saft</li>
-                        <li>Salt och peppar efter smak</li>
+                        <li itemprop="recipeIngredient">225 g Paneerost</li>
+                        <li itemprop="recipeIngredient">3 msk Tomatpuré</li>
+                        <li itemprop="recipeIngredient">35 g Tikka masala kryddmix</li>
+                        <li itemprop="recipeIngredient">1 tsk Honung</li>
+                        <li itemprop="recipeIngredient">3 dl Vatten</li>
+                        <li itemprop="recipeIngredient">1 msk Smör</li>
+                        <li itemprop="recipeIngredient">400 g Kikärtor</li>
+                        <li itemprop="recipeIngredient">130 g Babyspenat</li>
+                        <li itemprop="recipeIngredient">1 st Lime, pressad saft</li>
+                        <li itemprop="recipeIngredient">Salt och peppar efter smak</li>
                     </ul>
 
                     <h3>Till servering</h3>
 
                     <ul>
-                        <li>400 g Ris</li>
-                        <li>100 g Mango chutney</li>
-                        <li>200 g Yoghurt</li>
-                        <li>Färsk mynta</li>
+                        <li itemprop="recipeIngredient">400 g Ris</li>
+                        <li itemprop="recipeIngredient">100 g Mango chutney</li>
+                        <li itemprop="recipeIngredient">200 g Yoghurt</li>
+                        <li itemprop="recipeIngredient">Färsk mynta</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Instruktioner</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Koka ris enligt anvisning på förpackningen.</li>
                         <li>Skär osten i tärningar, ca 2x2 cm. Blanda tomatpuré, kryddmix, honung och vatten till en kryddpasta. Ställ åt sidan.</li>
                         <li>Stek osttärningarna runtom på medelvärme i smör i en panna ca 4 min. Låt kikärterna rinna av. Rör ner dem och kryddpastan i pannan. Låt koka på svag värme ca 5 minuter.</li>
@@ -96,10 +100,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>
