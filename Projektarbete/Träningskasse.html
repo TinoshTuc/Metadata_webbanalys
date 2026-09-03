@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Träningskassen | MiddagsGott</title>
+    <title>Träningskassen | Giga Bite</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bags.css">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Product">
 
     <header>
 
-        <h1>Träningskassen</h1>
+        <h1 itemprop="name">Träningskassen</h1>
 
-        <a href="Index.html">
-        <img src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
-    </a>
+        <a href="index.html">
+            <img itemprop="image" src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
+        </a>
 
-        <p>
+        <p itemprop="description">
             Proteinrika och välbalanserade middagar anpassade för
             en aktiv livsstil. 4 middagar för 4 personer.
         </p>
@@ -35,13 +35,13 @@
 
             <ul>
 
-                <li>
-                    <a href="Recept/recept_gym_lax.html">
-                        <strong>Cajungrillad lax med sötpotatismos och salsa</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_gym_lax.html">
+                        <strong itemprop="name">Cajungrillad lax med sötpotatismos och salsa</strong>
                         <span>(34 g protein | 580 kcal)</span>
                     </a>
 
-                    <p>
+                    <p itemprop="description">
                         Cajungrillad lax med sötpotatismos som serveras
                         med en härlig salsa. Funkar lika bra till vuxna
                         som för barn.
@@ -49,13 +49,13 @@
                 </li>
 
 
-                <li>
-                    <a href="Recept/recept_gym_köttfärslimpa.html">
-                        <strong>Enkel köttfärslimpa med tomat och rostad lök</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_gym_köttfärslimpa.html">
+                        <strong itemprop="name">Enkel köttfärslimpa med tomat och rostad lök</strong>
                         <span>(33 g protein | 530 kcal)</span>
                     </a>
 
-                    <p>
+                    <p itemprop="description">
                         Köttfärslimpa är bekväm middagsmat som sköter sig
                         själv i ugnen. I det här enkla receptet smaksätts
                         blandfärsen med tomatpesto och rostad lök.
@@ -64,13 +64,13 @@
                 </li>
 
 
-                <li>
-                    <a href="Recept/recept_gym_stekt_ris_kyckling.html">
-                        <strong>Stekt ris med kycklingfärs och broccoli</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_gym_stekt_ris_kyckling.html">
+                        <strong itemprop="name">Stekt ris med kycklingfärs och broccoli</strong>
                         <span>(35 g protein | 495 kcal)</span>
                     </a>
 
-                    <p>
+                    <p itemprop="description">
                         Stekt ris med kycklingfärs, ägg, purjo och broccoli.
                         Smaksätt med ingefära, sambal och soja. Toppa med
                         jordnötter, koriander och lime.
@@ -78,13 +78,13 @@
                 </li>
 
 
-                <li>
-                    <a href="Recept/recept_veg_gym_tofu.html">
-                        <strong>Nudlar med tofu, haricots verts och ägg</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_veg_gym_tofu.html">
+                        <strong itemprop="name">Nudlar med tofu, haricots verts och ägg</strong>
                         <span>(25 g protein | 520 kcal)</span>
                     </a>
 
-                    <p>
+                    <p itemprop="description">
                         Gör en asiatisk nudelwok med tofu, stekt ägg och
                         krispiga haricots verts. Denna snabba och goda
                         vardagsrätt får smak av sweet chilisås och koriander.
@@ -105,8 +105,9 @@
                 I Träningskassen ingår veckans fyra maträtter.
             </p>
 
-            <p>
-            Pris: <strong id="pris">829 kr</strong>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="SEK">
+                Pris: <strong id="pris" itemprop="price">829 kr</strong>
             </p>
 
             <div class="quantity">
@@ -193,52 +194,43 @@
     </aside>
 
 
-    <footer>
-
+    <footer itemscope itemtype="https://schema.org/Organization">
         <b>Följ oss på sociala medier:</b>
-
-        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank">
-            <img src="bilder/youtube.png" alt="YouTube">
+        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank" itemprop="sameAs">
+            <img src="bilder/youtube.png" alt="YouTube" style="width: 24px; height: auto; vertical-align: middle; margin-left: 6px;">
         </a>
-
         <hr>
-
+        <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
         <p>
-            &copy; 2026 Giga Bite. Alla rättigheter förbehållna.
+            Kontakt: <span itemprop="email">Info@gigabite.se</span> | 
+            Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>, <span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span></span> | 
+            Telefon: <span itemprop="telephone">080-132 546 87</span>
         </p>
-
-        <p>
-            Kontakt: Info@gigabite.se |
-            Adress: Giga Bite AB, Storgatan 123,
-            123 45 Stockholm |
-            Telefon: 080-132 546 87
-        </p>
-
     </footer>
 
 
     <script>
-    let antal = 1;
-    const prisPerKasse = 829;
+        let antal = 1;
+        const prisPerKasse = 829;
 
-    function uppdateraKassa() {
-        document.getElementById("antal").textContent = antal;
-        document.getElementById("pris").textContent =
-            (antal * prisPerKasse) + " kr";
-    }
+        function uppdateraKassa() {
+            document.getElementById("antal").textContent = antal;
+            document.getElementById("pris").textContent =
+                (antal * prisPerKasse) + " kr";
+        }
 
-    function okaAntal() {
-        antal++;
-        uppdateraKassa();
-    }
-
-    function minskaAntal() {
-        if (antal > 1) {
-            antal--;
+        function okaAntal() {
+            antal++;
             uppdateraKassa();
         }
-    }
-</script>
+
+        function minskaAntal() {
+            if (antal > 1) {
+                antal--;
+                uppdateraKassa();
+            }
+        }
+    </script>
 
 </body>
 

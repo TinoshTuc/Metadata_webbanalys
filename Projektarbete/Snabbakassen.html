@@ -4,21 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snabbkassen | MiddagsGott</title>
+    <title>Snabbkassen | Giga Bite</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bags.css">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Product">
 
     <header>
-        <h1>Snabbkassen</h1>
+        <h1 itemprop="name">Snabbkassen</h1>
 
-           <a href="Index.html">
-        <img src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
-    </a>
+        <a href="index.html">
+            <img itemprop="image" src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
+        </a>
 
-        <p>
+        <p itemprop="description">
             Snabba, smakrika och enkla middagar som kan lagas
             på under 30 minuter. 4 middagar för 4 personer.
         </p>
@@ -32,43 +32,43 @@
 
             <ul>
 
-                <li>
-                    <a href="Recept/recept_fried_rice_med_rakor.html">
-                        <strong>Shrimp Fried Rice</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_fried_rice_med_rakor.html">
+                        <strong itemprop="name">Shrimp Fried Rice</strong>
                         <span>(47 g protein | 560 kcal)</span>
                     </a>
-                    <p>
+                    <p itemprop="description">
                         En smakrik och snabb rätt med räkor, grönsaker
                         och ris som är enkel att laga.
                     </p>
                 </li>
 
-                <li>
-                    <a href="Recept/recept_kycklingpasta_pesto.html">
-                        <strong>Krämig kycklingpasta med pesto</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_kycklingpasta_pesto.html">
+                        <strong itemprop="name">Krämig kycklingpasta med pesto</strong>
                         <span>(42 g protein | 620 kcal)</span>
                     </a>
-                    <p>
+                    <p itemprop="description">
                         En smakrik och snabb rätt med kyckling, pesto och pasta.
                     </p>
                 </li>
 
-                <li>
-                    <a href="Recept/recept_lax_couscous_fetaost.html">
-                        <strong>Lax med couscous och fetaost</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_lax_couscous_fetaost.html">
+                        <strong itemprop="name">Lax med couscous och fetaost</strong>
                         <span>(36 g protein | 590 kcal)</span>
                     </a>
-                    <p>
+                    <p itemprop="description">
                         En smakrik och snabb rätt med lax, couscous och fetaost.
                     </p>
                 </li>
 
-                <li>
-                    <a href="Recept/recept_nudel_biffwok.html">
-                        <strong>Biffwok med nudlar</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_nudel_biffwok.html">
+                        <strong itemprop="name">Biffwok med nudlar</strong>
                         <span>(39 g protein | 570 kcal)</span>
                     </a>
-                    <p>
+                    <p itemprop="description">
                         En smakrik och snabb rätt med biff, wok och nudlar.
                     </p>
                 </li>
@@ -85,8 +85,9 @@
                 I Snabbkassen ingår veckans fyra maträtter.
             </p>
 
-            <p>
-            Pris: <strong id="pris">749 kr</strong>
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="SEK">
+                Pris: <strong id="pris" itemprop="price">749 kr</strong>
             </p>
 
             <div class="quantity">
@@ -173,52 +174,43 @@
     </aside>
 
 
-    <footer>
-
+    <footer itemscope itemtype="https://schema.org/Organization">
         <b>Följ oss på sociala medier:</b>
-
-        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank">
-            <img src="bilder/youtube.png" alt="YouTube">
+        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank" itemprop="sameAs">
+            <img src="bilder/youtube.png" alt="YouTube" style="width: 24px; height: auto; vertical-align: middle; margin-left: 6px;">
         </a>
-
         <hr>
-
+        <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
         <p>
-            &copy; 2026 Giga Bite. Alla rättigheter förbehållna.
+            Kontakt: <span itemprop="email">Info@gigabite.se</span> | 
+            Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>, <span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span></span> | 
+            Telefon: <span itemprop="telephone">080-132 546 87</span>
         </p>
-
-        <p>
-            Kontakt: Info@gigabite.se |
-            Adress: Giga Bite AB, Storgatan 123,
-            123 45 Stockholm |
-            Telefon: 080-132 546 87
-        </p>
-
     </footer>
 
 
     <script>
-    let antal = 1;
-    const prisPerKasse = 749;
+        let antal = 1;
+        const prisPerKasse = 749;
 
-    function uppdateraKassa() {
-        document.getElementById("antal").textContent = antal;
-        document.getElementById("pris").textContent =
-            (antal * prisPerKasse) + " kr";
-    }
+        function uppdateraKassa() {
+            document.getElementById("antal").textContent = antal;
+            document.getElementById("pris").textContent =
+                (antal * prisPerKasse) + " kr";
+        }
 
-    function okaAntal() {
-        antal++;
-        uppdateraKassa();
-    }
-
-    function minskaAntal() {
-        if (antal > 1) {
-            antal--;
+        function okaAntal() {
+            antal++;
             uppdateraKassa();
         }
-    }
-</script>
+
+        function minskaAntal() {
+            if (antal > 1) {
+                antal--;
+                uppdateraKassa();
+            }
+        }
+    </script>
 
 </body>
 

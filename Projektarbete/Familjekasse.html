@@ -1,85 +1,86 @@
+</html>
 <!DOCTYPE html>
 <html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Familjekassen | MiddagsGott</title>
+    <title>Familjekassen | Giga Bite</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bags.css">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Product">
     <header>
-             <h1>Familjekassen</h1>
+        <h1 itemprop="name">Familjekassen</h1>
              
-               <a href="Index.html">
-            <img src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
+        <a href="index.html">
+            <img itemprop="image" src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
+        </a>
 
-            </a>
-             <p>
-                God och enkel mat för hela familjen.
-                Fyra utvalda maträtter som passar perfekt
-                för veckans middagar. 4 middagar för 4 personer.
-            </p>
+        <p itemprop="description">
+            God och enkel mat för hela familjen.
+            Fyra utvalda maträtter som passar perfekt
+            för veckans middagar. 4 middagar för 4 personer.
+        </p>
     </header>
 
     <main>
         <nav>
-            <h2>
-                Recept i Familjekassen
-
-            </h2>
+            <h2>Recept i Familjekassen</h2>
             <ul>
-                <li>
-                    <a href="recept/recept_kyckling_gryta.html">
-                        <strong>Kycklinggryta med ris</strong>
-                        <span>36g Protein | 650 kcal</span>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="recept/recept_kyckling_gryta.html">
+                        <strong itemprop="name">Kycklinggryta med ris</strong>
+                        <span>(36 g protein | 650 kcal)</span>
                     </a>
-                    <p>
+                    <p itemprop="description">
                         En smakrik kycklinggryta med ris som är enkel
                         att laga och passar hela familjen.
                     </p>
                 </li>
 
-                <li>
-                    <a href="recept/recept_spagetti_kottfarssas.html">
-                        <strong>Spaghetti och köttfärssås</strong>
-                        <span>30g Protein | 550 kcal</span>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="recept/recept_spagetti_kottfarssas.html">
+                        <strong itemprop="name">Spaghetti och köttfärssås</strong>
+                        <span>(30 g protein | 550 kcal)</span>
                     </a>
-                    <p>
+                    <p itemprop="description">
                         En klassisk och familjevänlig köttfärssås som är enkel att laga.
                     </p>
                 </li>
 
-                <li>
-                    <a href="recept/recept_kottbullar_potatis_brunsas.html">
-                        <strong>Köttbullar med potatis och brunsås</strong>
-                        <span>35g Protein | 600 kcal</span>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="recept/recept_kottbullar_potatis_brunsas.html">
+                        <strong itemprop="name">Köttbullar med potatis och brunsås</strong>
+                        <span>(35 g protein | 600 kcal)</span>
                     </a>
-                    <p>
+                    <p itemprop="description">
                         En klassisk familjemiddag med potatis och brunsås.
                     </p>
                 </li>
 
-                <li>
-                    <a href="recept/recept_oxfile_potatisgratang_rodvinsas_sparris.html">
-                        <strong>Oxfilé med potatisgratäng</strong>
-                        <span>32g Protein | 580 kcal</span>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="recept/recept_oxfile_potatisgratang_rodvinsas_sparris.html">
+                        <strong itemprop="name">Oxfilé med potatisgratäng</strong>
+                        <span>(32 g protein | 580 kcal)</span>
                     </a>
-                    <p>
+                    <p itemprop="description">
                         En elegant middag med oxfilé, potatisgratäng och rödvinssås.
                     </p>
                 </li>
             </ul>
         </nav>
+
         <form>
             <h2>Köp Familjekassen</h2>
             <p>
                 I Familjekassen ingår veckans fyra maträtter.
             </p>
-            <p>
-            Pris: <strong id="pris">899 kr</strong>
+
+            <p itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="SEK">
+                Pris: <strong id="pris" itemprop="price">899 kr</strong>
             </p>
 
             <div class="quantity">
@@ -97,6 +98,7 @@
             </button>
         </form>
     </main>
+
     <aside>
         <nav>
             <h2>Andra recept</h2>
@@ -153,38 +155,43 @@
             </ul>
         </nav>
     </aside>
-    <footer>
+
+    <footer itemscope itemtype="https://schema.org/Organization">
         <b>Följ oss på sociala medier:</b>
-        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank">
-            <img src="bilder/youtube.png" alt="YouTube">
+        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank" itemprop="sameAs">
+            <img src="bilder/youtube.png" alt="YouTube" style="width: 24px; height: auto; vertical-align: middle; margin-left: 6px;">
         </a>
         <hr>
-        <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
-        <p>Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87</p>
-
+        <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
+        <p>
+            Kontakt: <span itemprop="email">Info@gigabite.se</span> | 
+            Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>, <span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span></span> | 
+            Telefon: <span itemprop="telephone">080-132 546 87</span>
+        </p>
     </footer>
-      <script>
-    let antal = 1;
-    const prisPerKasse = 899;
 
-    function uppdateraKassa() {
-        document.getElementById("antal").textContent = antal;
-        document.getElementById("pris").textContent =
-            (antal * prisPerKasse) + " kr";
-    }
+    <script>
+        let antal = 1;
+        const prisPerKasse = 899;
 
-    function okaAntal() {
-        antal++;
-        uppdateraKassa();
-    }
+        function uppdateraKassa() {
+            document.getElementById("antal").textContent = antal;
+            document.getElementById("pris").textContent =
+                (antal * prisPerKasse) + " kr";
+        }
 
-    function minskaAntal() {
-        if (antal > 1) {
-            antal--;
+        function okaAntal() {
+            antal++;
             uppdateraKassa();
         }
-    }
-</script>
+
+        function minskaAntal() {
+            if (antal > 1) {
+                antal--;
+                uppdateraKassa();
+            }
+        }
+    </script>
 </body>
 
 </html>
