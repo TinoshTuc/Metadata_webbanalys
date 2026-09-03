@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="bags.css">
 </head>
 
-<body>
+<body itemscope itemtype="http://schema.org/Product">
 
     <header>
 
-        <h1>Vegetariska kassen</h1>
+        <h1 itemprop="name">Vegetariska kassen</h1>
 
            <a href="Index.html">
-        <img src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
-    </a>
+        <img itemprop="image" src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
+            </a>
 
-        <p>
+        <p itemprop="description">
             Upptäck vår vegetariska kasse med fyra läckra och näringsrika
             rätter som passar perfekt för en hälsosam och varierad kost.
             Varje rätt är noggrant utvald med fokus på smak, variation
@@ -37,51 +37,51 @@
 
             <ul>
 
-                <li>
-                    <a href="Recept/recept_veg_curry.html">
-                        <strong>Vegetarisk curry</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_veg_curry.html">
+                        <strong itemprop="name">Vegetarisk curry</strong>
                         <span>(28 g protein | 520 kcal)</span>
                     </a>
 
-                    <p>
+                    <p itemprop="description">
                         En smakrik vegetarisk curry med paneerost som gärna
                         serveras med ris, chutney och yoghurt.
                     </p>
                 </li>
 
-
-                <li>
-                    <a href="Recept/recept_veg_las.html">
-                        <strong>Vegetarisk lasagne</strong>
+                
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_veg_las.html">
+                        <strong itemprop="name">Vegetarisk lasagne</strong>
                         <span>(25 g protein | 500 kcal)</span>
                     </a>
 
-                    <p>
+                    <p itemprop="description">
                         En klassisk vegetarisk lasagne med spenat och ricotta
                         som passar perfekt som vardagsrätt.
                     </p>
                 </li>
 
 
-                <li>
-                    <a href="Recept/recept_veg_gym_tofu.html">
-                        <strong>Vegetarisk wok</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_veg_gym_tofu.html">
+                        <strong itemprop="name">Vegetarisk wok</strong>
                         <span>(20 g protein | 450 kcal)</span>
                     </a>
 
-                    <p>
+                    <p itemprop="description">
                         En snabb vegetarisk wok med färska grönsaker och tofu.
                     </p>
                 </li>
 
 
-                <li>
-                    <a href="Recept/recept_veg_kaldomar.html">
-                        <strong>Vegetariska kåldolmar</strong>
+                <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
+                    <a itemprop="url" href="Recept/recept_veg_kaldomar.html">
+                        <strong itemprop="name">Vegetariska kåldolmar</strong>
                         <span>(15 g protein | 400 kcal)</span>
                     </a>
 
-                    <p>
+                    <p itemprop="description">
                         Smakrika vegetariska kåldolmar fyllda med ris och
                         grönsaker, serverade med lingon.
                     </p>
@@ -100,8 +100,9 @@
                 I Vegetariska kassen ingår veckans fyra maträtter.
             </p>
 
-            <p>
-            Pris: <strong id="pris">749 kr</strong>
+            <p itemprop ="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="SEK">
+            Pris: <strong id="pris" itemprop="price">749 kr</strong>
             </p>
 
             <div class="quantity">
