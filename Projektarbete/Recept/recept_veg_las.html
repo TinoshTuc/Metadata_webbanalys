@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på vegetarisk lasagne med spenat, ricotta, parmesan och mozzarella från Giga Bite.">
         <title>Vegetarisk lasagne</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,27 +35,27 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
 
-            <h1>Vegetarisk lasagne</h1>
+            <h1 itemprop="name">Vegetarisk lasagne</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/las_veg.webp" 
                     alt="Vegetarisk lasagne"
                 >
 
-                <p>
+                <p itemprop="description">
                     En klassisk vegetarisk lasagne med spenat och ricotta som passar perfekt som vardagsrätt.
                 </p>
             </section>
 
             <p>
-                Förberedelse: 20 minuter | Tillagning: 35 minuter | Total tid: 55 minuter | Svårighetsgrad: Medel | 6 portioner
+                Förberedelse: <time itemprop="prepTime" datetime="PT20M">20 minuter</time> | Tillagning: <time itemprop="cookTime" datetime="PT35M">35 minuter</time> | Total tid: <time itemprop="totalTime" datetime="PT55M">55 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Medel</span> | <span itemprop="recipeYield">6 portioner</span>
             </p>
 
-            <p>
-                Näringsvärde per portion: 450 kcal
+            <p itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                Näringsvärde per portion:<span itemprop="calories"> 450 kcal</span>
             </p>
 
             <div>
@@ -61,37 +65,37 @@
                     <h3>Fyllning</h3>
 
                     <ul>
-                        <li>500 g Fryst spenat, tinad och urkramad</li>
-                        <li>750 g Ricottaost</li>
-                        <li>2 st Ägg</li>
-                        <li>75 g Parmesanost, riven</li>
-                        <li>1,3 krm Muskotnöt, riven</li>
-                        <li>2,5 krm Salt</li>
-                        <li>2,5 krm Svartpeppar</li>
+                        <li itemprop="recipeIngredient">500 g Fryst spenat, tinad och urkramad</li>
+                        <li itemprop="recipeIngredient">750 g Ricottaost</li>
+                        <li itemprop="recipeIngredient">2 st Ägg</li>
+                        <li itemprop="recipeIngredient">75 g Parmesanost, riven</li>
+                        <li itemprop="recipeIngredient">1,3 krm Muskotnöt, riven</li>
+                        <li itemprop="recipeIngredient">2,5 krm Salt</li>
+                        <li itemprop="recipeIngredient">2,5 krm Svartpeppar</li>
                     </ul>
 
                     <h3>Bechamelsås</h3>
 
                     <ul>
-                        <li>75 g smör</li>
-                        <li>0,75 dl vetemjöl</li>
-                        <li>1 l mjölk</li>
-                        <li>2,5 krm Salt</li>
-                        <li>2,5 krm Svartpeppar</li>
+                        <li itemprop="recipeIngredient">75 g smör</li>
+                        <li itemprop="recipeIngredient">0,75 dl vetemjöl</li>
+                        <li itemprop="recipeIngredient">1 l mjölk</li>
+                        <li itemprop="recipeIngredient">2,5 krm Salt</li>
+                        <li itemprop="recipeIngredient">2,5 krm Svartpeppar</li>
                     </ul>
 
                     <h3>Övrigt</h3>
 
                     <ul>
-                        <li>12 st Lasagneplattor</li>
-                        <li>200 g Mozzarellaost, riven</li>
+                        <li itemprop="recipeIngredient">12 st Lasagneplattor</li>
+                        <li itemprop="recipeIngredient">200 g Mozzarellaost, riven</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Instruktioner</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Sätt ugnen på 200°C.</li>
                         <li>Blanda ricotta, tinad och urkramad spenat, ägg, riven parmesan, muskotnöt, salt och peppar i en skål.</li>
                         <li>Smält smöret till bechamelsåsen i en kastrull. Vispa ner mjölet och låt fräsa under omrörning i någon minut. Späd med mjölken, lite i taget, under konstant vispning så att inga klumpar bildas. Låt såsen koka upp och sjud på svag värme i ca 5 minuter, rör om då och då. Smaka av med salt och vitpeppar.</li>
@@ -104,10 +108,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

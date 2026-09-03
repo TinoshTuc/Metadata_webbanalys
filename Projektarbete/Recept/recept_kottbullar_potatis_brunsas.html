@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på klassiska svenska köttbullar med potatis, krämig brunsås, lingonsylt och inlagd gurka från Giga Bite.">
         <title>Köttbullar med potatis och brunsås</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,23 +35,23 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
             
-            <h1>Köttbullar med potatis och brunsås</h1>
+            <h1 itemprop="name">Köttbullar med potatis och brunsås</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/kottbullar.jpg" 
                     alt="Köttbullar med potatis och brun sås"
                 >
 
-                <p>
+                <p itemprop="description">
                     Klassiska svenska köttbullar med potatis och krämig brunsås, gärna serverade med lingonsylt och inlagd gurka.
                 </p>
             </section>
 
             <p>
-                Tillagning: cirka 40 minuter | Svårighetsgrad: Lätt | 4 portioner
+                Tillagning: cirka <time itemprop="cookTime" datetime="PT40M">40 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Lätt</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
             <div>
@@ -55,32 +59,32 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>500 g köttfärs</li>
-                        <li>1 dl ströbröd</li>
-                        <li>1 dl mjölk</li>
-                        <li>1 gul lök</li>
-                        <li>1 ägg</li>
-                        <li>Salt och peppar</li>
-                        <li>Potatis</li>
-                        <li>Smör</li>
-                        <li>Grädde</li>
-                        <li>Buljong</li>
-                        <li>Soja</li>
-                        <li>Mjöl</li>
+                        <li itemprop="recipeIngredient">500 g köttfärs</li>
+                        <li itemprop="recipeIngredient">1 dl ströbröd</li>
+                        <li itemprop="recipeIngredient">1 dl mjölk</li>
+                        <li itemprop="recipeIngredient">1 gul lök</li>
+                        <li itemprop="recipeIngredient">1 ägg</li>
+                        <li itemprop="recipeIngredient">Salt och peppar</li>
+                        <li itemprop="recipeIngredient">Potatis</li>
+                        <li itemprop="recipeIngredient">Smör</li>
+                        <li itemprop="recipeIngredient">Grädde</li>
+                        <li itemprop="recipeIngredient">Buljong</li>
+                        <li itemprop="recipeIngredient">Soja</li>
+                        <li itemprop="recipeIngredient">Mjöl</li>
                     </ul>
 
                     <h3>Servering</h3>
 
                     <ul>
-                        <li>Lingonsylt</li>
-                        <li>Inlagd gurka</li>
+                        <li itemprop="recipeIngredient">Lingonsylt</li>
+                        <li itemprop="recipeIngredient">Inlagd gurka</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Gör så här</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Koka potatisen tills den är mjuk.</li>
                         <li>Blanda ströbröd och mjölk och låt stå några minuter.</li>
                         <li>Hacka löken fint.</li>
@@ -94,10 +98,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

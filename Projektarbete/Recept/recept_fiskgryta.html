@@ -9,6 +9,10 @@
         })(window,document,'script','dataLayer','GTM-PVJCHMGQ');</script>
         <!-- End Google Tag Manager -->
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på en smakrik fiskgryta med torsk, lax, saffran, räkor och musslor från Giga Bite.">
         <title>Fiskgrytan | Giga Bite</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -30,27 +34,27 @@
             </a>
         </header>
 
-        <main>
-
-            <h1>Fiskgrytan</h1>
+        <main itemscope itemtype="http://schema.org/Recipe">
+            
+            <h1 itemprop="name">Fiskgrytan</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/fiskgryta.jpg" 
                     alt="Fiskgryta"
                 >
 
-                <p>
+                <p itemprop="description">
                     En läcker fiskgryta med en lysande gul färg och ljuvlig smak. Passar både till att bjuda på en sällskaplig middag så väl en lyxig hemmakväll.
                 </p>
             </section>
 
             <p>
-                Förberedelse: 15 minuter | Tillagning: 30 minuter | Total tid: 45 minuter | Svårighetsgrad: Medel | 4 portioner
+                Förberedelse: <time itemprop="prepTime" datetime="PT15M">15 minuter</time> | Tillagning: <time itemprop="cookTime" datetime="PT30M">30 minuter</time> | Total tid: <time itemprop="totalTime" datetime="PT45M">45 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Medel</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
-            <p>
-                Näringsvärde per portion: 450 kcal
+            <p itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                Näringsvärde per portion:<span itemprop="calories"> 450 kcal</span>
             </p>
 
             <div>
@@ -58,38 +62,38 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>400 g Torskfilé</li>
-                        <li>300 g Laxfilé</li>
-                        <li>1/2 st Purjolök</li>
-                        <li>1/2 st Gul lök</li>
-                        <li>1 msk Smör eller olivolja</li>
-                        <li>1 st Vitlöksklyfta</li>
-                        <li>1 1/2 tsk Tomatpuré</li>
-                        <li>1 tsk Torkad timjan</li>
-                        <li>1 tsk Torkad basilika</li>
-                        <li>2 1/2 dl Torrt vitt vin</li>
-                        <li>1 1/2 Fiskbuljongtärning</li>
-                        <li>2 dl Grädde</li>
-                        <li>1 dl Créme fraîche</li>
-                        <li>2 dl Vatten</li>
-                        <li>1 pkt Saffran</li>
-                        <li>300 g Räkor med skal</li>
-                        <li>1 st Burk musslor (á 150 g)</li>
-                        <li>Salt och peppar efter smak</li>
+                        <li itemprop="recipeIngredient">400 g Torskfilé</li>
+                        <li itemprop="recipeIngredient">300 g Laxfilé</li>
+                        <li itemprop="recipeIngredient">1/2 st Purjolök</li>
+                        <li itemprop="recipeIngredient">1/2 st Gul lök</li>
+                        <li itemprop="recipeIngredient">1 msk Smör eller olivolja</li>
+                        <li itemprop="recipeIngredient">1 st Vitlöksklyfta</li>
+                        <li itemprop="recipeIngredient">1 1/2 tsk Tomatpuré</li>
+                        <li itemprop="recipeIngredient">1 tsk Torkad timjan</li>
+                        <li itemprop="recipeIngredient">1 tsk Torkad basilika</li>
+                        <li itemprop="recipeIngredient">2 1/2 dl Torrt vitt vin</li>
+                        <li itemprop="recipeIngredient">1 1/2 Fiskbuljongtärning</li>
+                        <li itemprop="recipeIngredient">2 dl Grädde</li>
+                        <li itemprop="recipeIngredient">1 dl Créme fraîche</li>
+                        <li itemprop="recipeIngredient">2 dl Vatten</li>
+                        <li itemprop="recipeIngredient">1 pkt Saffran</li>
+                        <li itemprop="recipeIngredient">300 g Räkor med skal</li>
+                        <li itemprop="recipeIngredient">1 st Burk musslor (á 150 g)</li>
+                        <li itemprop="recipeIngredient">Salt och peppar efter smak</li>
                     </ul>
 
                     <h3>Till servering</h3>
 
                     <ul>
-                        <li>Färskt bröd</li>
-                        <li>Aioli</li>
+                        <li itemprop="recipeIngredient">Färskt bröd</li>
+                        <li itemprop="recipeIngredient">Aioli</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Instruktioner</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Tina fisken (om fryst används). Skölj, ansa och strimla purjon. Skala och hacka löken.</li>
 
                         <li>Smält smöret i en stor gryta eller tjockbottnad kastrull. Fräs löken och purjolöken (spara lite till servering) ett par minuter tills de blivit glansiga och genomskinliga. Pressa i vitlök. Rör ner tomatpuré, timjan och basilika. Låt detta fräsa med en kort stund.</li>
@@ -108,10 +112,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

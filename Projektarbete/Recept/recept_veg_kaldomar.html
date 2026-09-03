@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på vegetariska kåldolmar med portabellosvamp, linser, ris och grönkål från Giga Bite.">
         <title>Vegetariska kåldomar</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,27 +35,27 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
 
-            <h1>Vegetariska kåldomar</h1>
+            <h1 itemprop="name">Vegetariska kåldomar</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/kåldomar_veg.jpg" 
                     alt="Vegetariska kåldomar"
                 >
 
-                <p>
+                <p itemprop="description">
                     En smakrik vegetarisk kåldom med svamp och linser som serveras gärna med vackra lingon.
                 </p>
             </section>
 
             <p>
-                Förberedelse: 20 minuter | Tillagning: 25 minuter | Total tid: 55 minuter | Svårighetsgrad: Medel | 4 portioner
+                Förberedelse: <time itemprop="prepTime" datetime="PT20M">20 minuter</time> | Tillagning: <time itemprop="cookTime" datetime="PT25M">25 minuter</time> | Total tid: <time itemprop="totalTime" datetime="PT55M">55 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Medel</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
-            <p>
-                Näringsvärde per portion: 532 kcal
+            <p itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                Näringsvärde per portion:<span itemprop="calories"> 532 kcal</span>
             </p>
 
             <div>
@@ -59,39 +63,39 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>250 g Portabellosvamp</li>
-                        <li>380 g Gröna Linser, förkokta</li>
-                        <li>500 g Spetskål</li>
-                        <li>0,5 msk Sirap</li>
-                        <li>1 dl Vatten</li>
-                        <li>1 msk Olivolja</li>
-                        <li>2 dl Vispgrädde</li>
-                        <li>2 st Vitlöksklyfta</li>
-                        <li>1 tsk Vit balsamvinäger</li>
-                        <li>250 g Färska champinjoner</li>
-                        <li>1 st Gul lök</li>
-                        <li>2 tsk Grönsaksbuljon</li>
-                        <li>1 st Färsk persilja</li>
-                        <li>0,5 dl Basmatiris</li>
-                        <li>25 g Smör</li>
-                        <li>75 g Frysta lingon</li>
-                        <li>75 g Grönkål</li>
-                        <li>1 msk Japansk soja</li>
-                        <li>Salt och peppar efter smak</li>
+                        <li itemprop="recipeIngredient">250 g Portabellosvamp</li>
+                        <li itemprop="recipeIngredient">380 g Gröna Linser, förkokta</li>
+                        <li itemprop="recipeIngredient">500 g Spetskål</li>
+                        <li itemprop="recipeIngredient">0,5 msk Sirap</li>
+                        <li itemprop="recipeIngredient">1 dl Vatten</li>
+                        <li itemprop="recipeIngredient">1 msk Olivolja</li>
+                        <li itemprop="recipeIngredient">2 dl Vispgrädde</li>
+                        <li itemprop="recipeIngredient">2 st Vitlöksklyfta</li>
+                        <li itemprop="recipeIngredient">1 tsk Vit balsamvinäger</li>
+                        <li itemprop="recipeIngredient">250 g Färska champinjoner</li>
+                        <li itemprop="recipeIngredient">1 st Gul lök</li>
+                        <li itemprop="recipeIngredient">2 tsk Grönsaksbuljon</li>
+                        <li itemprop="recipeIngredient">1 st Färsk persilja</li>
+                        <li itemprop="recipeIngredient">0,5 dl Basmatiris</li>
+                        <li itemprop="recipeIngredient">25 g Smör</li>
+                        <li itemprop="recipeIngredient">75 g Frysta lingon</li>
+                        <li itemprop="recipeIngredient">75 g Grönkål</li>
+                        <li itemprop="recipeIngredient">1 msk Japansk soja</li>
+                        <li itemprop="recipeIngredient">Salt och peppar efter smak</li>
                     </ul>
 
                     <h3>Till servering</h3>
 
                     <ul>
-                        <li>800 g kokt potatis</li>
-                        <li>Sallad</li>
+                        <li itemprop="recipeIngredient">800 g kokt potatis</li>
+                        <li itemprop="recipeIngredient">Sallad</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Instruktioner</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Värm ugnen till 200 grader.</li>
                         <li>Koka ris enligt anvisning på förpackningen.</li>
                         <li>Skär spetskålen i 4 delar och koka i lättsaltat vatten i ca 5 minuter. Låt rinna av och lägg åt sidan.</li>
@@ -107,10 +111,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

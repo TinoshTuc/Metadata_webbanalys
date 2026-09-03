@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på asiatiska nudlar med tofu, haricot verts, stekt ägg, sweet chili, soja och sesamolja från Giga Bite.">
         <title>Nudlar med tofu, haricot verts och ägg</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,27 +35,27 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
             
-            <h1>Nudlar med tofu, haricot verts och ägg</h1>
+            <h1 itemprop="name">Nudlar med tofu, haricot verts och ägg</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/Gym_tofu.png" 
                     alt="Nudlar med tofu, haricot verts och ägg"
                 >
 
-                <p>
+                <p itemprop="description">
                     Gör en asiatisk nudelwok med tofu, stekt ägg och krispiga haricot verts. En snabb och god vardagsrätt smaksatt med sweet chili, soja och sesamolja.
                 </p>
             </section>
 
             <p>
-                Förberedelse: 10 minuter | Tillagning: 15 minuter | Total tid: 25 minuter | Svårighetsgrad: Enkel | 4 portioner
+                Förberedelse: <time itemprop="prepTime" datetime="PT10M">10 minuter</time> | Tillagning: <time itemprop="cookTime" datetime="PT15M">15 minuter</time> | Total tid: <time itemprop="totalTime" datetime="PT25M">25 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Enkel</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
-            <p>
-                Näringsvärde per portion: 520 kcal | Protein: 25 g
+            <p itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                Näringsvärde per portion:<span itemprop="calories"> 520 kcal</span> | <span itemprop="proteinContent">Protein: 25 g</span>
             </p>
 
             <div>
@@ -59,31 +63,31 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>250 g Äggnudlar</li>
-                        <li>270 g Tofu naturell</li>
-                        <li>1 st Röd paprika</li>
-                        <li>250 g Frysta haricots verts</li>
-                        <li>0,75 dl Japansk soja</li>
-                        <li>0,5 dl Sweet chilisås</li>
-                        <li>0,5 msk Sesamolja</li>
-                        <li>0,5 tsk Chiliflakes</li>
-                        <li>4 st Ägg</li>
-                        <li>2 msk Rapsolja</li>
+                        <li itemprop="recipeIngredient">250 g Äggnudlar</li>
+                        <li itemprop="recipeIngredient">270 g Tofu naturell</li>
+                        <li itemprop="recipeIngredient">1 st Röd paprika</li>
+                        <li itemprop="recipeIngredient">250 g Frysta haricots verts</li>
+                        <li itemprop="recipeIngredient">0,75 dl Japansk soja</li>
+                        <li itemprop="recipeIngredient">0,5 dl Sweet chilisås</li>
+                        <li itemprop="recipeIngredient">0,5 msk Sesamolja</li>
+                        <li itemprop="recipeIngredient">0,5 tsk Chiliflakes</li>
+                        <li itemprop="recipeIngredient">4 st Ägg</li>
+                        <li itemprop="recipeIngredient">2 msk Rapsolja</li>
                     </ul>
 
                     <h3>Till servering</h3>
 
                     <ul>
-                        <li>1 kruka Färsk koriander</li>
-                        <li>1 st Lime</li>
-                        <li>0,5 dl Rostad lök</li>
+                        <li itemprop="recipeIngredient">1 kruka Färsk koriander</li>
+                        <li itemprop="recipeIngredient">1 st Lime</li>
+                        <li itemprop="recipeIngredient">0,5 dl Rostad lök</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Instruktioner</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Koka nudlarna enligt anvisning på förpackningen. Häll av i durkslag och låt ånga av.</li>
                         <li>Skär tofun i tärningar. Dela, kärna ur och strimla paprikan.</li>
                         <li>Hetta upp lite olja i en wok eller stor stekpanna och stek tofun några minuter tills den får färg. Häll på hälften av sojan och låt koka in.</li>
@@ -96,10 +100,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

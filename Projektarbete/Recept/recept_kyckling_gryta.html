@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på en smakrik och krämig kycklinggryta med chili, paprika och ris från Giga Bite.">
         <title>Kycklinggryta med ris och chili</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,23 +35,23 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
 
-            <h1>Kycklinggryta med ris och chili</h1>
+            <h1 itemprop="name">Kycklinggryta med ris och chili</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/kycklinggryta.jpg" 
                     alt="Kycklinggryta med ris och chili"
                 >
 
-                <p>
+                <p itemprop="description">
                     En smakrik och krämig kycklinggryta med chili, paprika och ris.
                 </p>
             </section>
 
             <p>
-                Tillagning: cirka 25 minuter | Svårighetsgrad: Lätt | 4 portioner
+                Tillagning: cirka <time itemprop="cookTime" datetime="PT25M">25 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Lätt</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
             <div>
@@ -55,23 +59,23 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>500 g kycklingfilé</li>
-                        <li>3 dl ris</li>
-                        <li>1 gul lök</li>
-                        <li>2 vitlöksklyftor</li>
-                        <li>1 röd chili</li>
-                        <li>2 dl grädde</li>
-                        <li>1 paprika</li>
-                        <li>1 msk olja</li>
-                        <li>1 tsk paprikapulver</li>
-                        <li>Salt och peppar</li>
+                        <li itemprop="recipeIngredient">500 g kycklingfilé</li>
+                        <li itemprop="recipeIngredient">3 dl ris</li>
+                        <li itemprop="recipeIngredient">1 gul lök</li>
+                        <li itemprop="recipeIngredient">2 vitlöksklyftor</li>
+                        <li itemprop="recipeIngredient">1 röd chili</li>
+                        <li itemprop="recipeIngredient">2 dl grädde</li>
+                        <li itemprop="recipeIngredient">1 paprika</li>
+                        <li itemprop="recipeIngredient">1 msk olja</li>
+                        <li itemprop="recipeIngredient">1 tsk paprikapulver</li>
+                        <li itemprop="recipeIngredient">Salt och peppar</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Gör så här</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Koka riset enligt anvisningarna på förpackningen.</li>
                         <li>Skär kycklingen i mindre bitar.</li>
                         <li>Hacka löken, vitlöken och chilin.</li>
@@ -88,10 +92,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

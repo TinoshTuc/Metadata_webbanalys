@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på oxfilé med krämig potatisgratäng, fyllig rödvinssås och smörstekt sparris från Giga Bite.">
         <title>Oxfilé med potatisgratäng</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,23 +35,23 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
             
-            <h1>Oxfilé med potatisgratäng, rödvinssås och sparris</h1>
+            <h1 itemprop="name">Oxfilé med potatisgratäng, rödvinssås och sparris</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/Oxfile.jpeg" 
                     alt="Oxfilé med potatisgratäng, rödvinssås och sparris"
                 >
 
-                <p>
+                <p itemprop="description">
                     En lyxig middag med mör oxfilé, krämig potatisgratäng, fyllig rödvinssås och smörstekt sparris.
                 </p>
             </section>
 
             <p>
-                Tillagning: cirka 60 minuter | Svårighetsgrad: Medel | 4 portioner
+                Tillagning: <time itemprop="cookTime" datetime="PT60M">cirka 60 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Medel</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
             <div>
@@ -56,37 +60,37 @@
 
                     <h3>Oxfilé</h3>
                     <ul>
-                        <li>600 g oxfilé</li>
-                        <li>Salt</li>
-                        <li>Svartpeppar</li>
-                        <li>Smör</li>
-                        <li>Olja</li>
+                        <li itemprop="recipeIngredient">600 g oxfilé</li>
+                        <li itemprop="recipeIngredient">Salt</li>
+                        <li itemprop="recipeIngredient">Svartpeppar</li>
+                        <li itemprop="recipeIngredient">Smör</li>
+                        <li itemprop="recipeIngredient">Olja</li>
                     </ul>
 
                     <h3>Potatisgratäng</h3>
                     <ul>
-                        <li>800 g potatis</li>
-                        <li>3 dl grädde</li>
-                        <li>2 vitlöksklyftor</li>
-                        <li>150 g riven ost</li>
-                        <li>Salt och peppar</li>
+                        <li itemprop="recipeIngredient">800 g potatis</li>
+                        <li itemprop="recipeIngredient">3 dl grädde</li>
+                        <li itemprop="recipeIngredient">2 vitlöksklyftor</li>
+                        <li itemprop="recipeIngredient">150 g riven ost</li>
+                        <li itemprop="recipeIngredient">Salt och peppar</li>
                     </ul>
 
                     <h3>Rödvinssås</h3>
                     <ul>
-                        <li>3 dl rödvin</li>
-                        <li>2 dl kalvfond</li>
-                        <li>1 schalottenlök</li>
-                        <li>1 msk smör</li>
-                        <li>1 tsk socker</li>
-                        <li>Salt och peppar</li>
+                        <li itemprop="recipeIngredient">3 dl rödvin</li>
+                        <li itemprop="recipeIngredient">2 dl kalvfond</li>
+                        <li itemprop="recipeIngredient">1 schalottenlök</li>
+                        <li itemprop="recipeIngredient">1 msk smör</li>
+                        <li itemprop="recipeIngredient">1 tsk socker</li>
+                        <li itemprop="recipeIngredient">Salt och peppar</li>
                     </ul>
 
                     <h3>Sparris</h3>
                     <ul>
-                        <li>1 knippe grön sparris</li>
-                        <li>1 msk smör</li>
-                        <li>Salt</li>
+                        <li itemprop="recipeIngredient">1 knippe grön sparris</li>
+                        <li itemprop="recipeIngredient">1 msk smör</li>
+                        <li itemprop="recipeIngredient">Salt</li>
                     </ul>
                 </section>
 
@@ -94,7 +98,7 @@
                     <h2>Gör så här</h2>
 
                     <h3>Potatisgratäng</h3>
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Skala och skiva potatisen tunt.</li>
                         <li>Hacka vitlöken.</li>
                         <li>Lägg potatisen i en ugnsform.</li>
@@ -104,7 +108,7 @@
                     </ol>
 
                     <h3>Oxfilé</h3>
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Krydda oxfilén med salt och svartpeppar.</li>
                         <li>Hetta upp en stekpanna med olja och smör.</li>
                         <li>Bryn köttet runt om.</li>
@@ -113,7 +117,7 @@
                     </ol>
 
                     <h3>Rödvinssås</h3>
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Hacka schalottenlöken fint.</li>
                         <li>Fräs löken i smör.</li>
                         <li>Tillsätt rödvin och kalvfond.</li>
@@ -123,7 +127,7 @@
                     </ol>
 
                     <h3>Sparris</h3>
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Skär bort den nedersta delen av sparrisen.</li>
                         <li>Stek sparrisen i smör i några minuter.</li>
                         <li>Krydda med lite salt.</li>
@@ -137,10 +141,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

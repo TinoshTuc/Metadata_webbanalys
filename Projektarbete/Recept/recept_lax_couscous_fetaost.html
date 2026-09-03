@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på lax med couscous, krispiga grönsaker och fetaost från Giga Bite.">
         <title>Lax med couscous och fetaost</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,27 +35,27 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
             
-            <h1>Lax med couscous och fetaost</h1>
+            <h1 itemprop="name">Lax med couscous och fetaost</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/lax_couscous.png" 
                     alt="Lax med couscous, grönsaker och fetaost"
                 >
 
-                <p>
+                <p itemprop="description">
                     En enkel och fräsch vardagsrätt med stekt lax, fluffig couscous, krispiga grönsaker och krämig fetaost. En snabb middag med mycket smak och få moment.
                 </p>
             </section>
 
             <p>
-                Förberedelse: 10 minuter | Tillagning: 15 minuter | Total tid: 25 minuter | Svårighetsgrad: Enkel | 4 portioner
+                Förberedelse: <time itemprop="prepTime" datetime="PT10M">10 minuter</time> | Tillagning: <time itemprop="cookTime" datetime="PT15M">15 minuter</time> | Total tid: <time itemprop="totalTime" datetime="PT25M">25 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Enkel</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
-            <p>
-                Näringsvärde per portion: 590 kcal | Protein: 36 g
+            <p itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                Näringsvärde per portion:<span itemprop="calories"> 590 kcal</span> | <span itemprop="proteinContent">Protein: 36 g</span>
             </p>
 
             <div>
@@ -59,30 +63,30 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>500 g laxfilé</li>
-                        <li>3 dl couscous</li>
-                        <li>1 st paprika</li>
-                        <li>1 st rödlök</li>
-                        <li>150 g körsbärstomater</li>
-                        <li>100 g fetaost</li>
-                        <li>1 msk olivolja</li>
-                        <li>1 st citron</li>
-                        <li>1 tsk torkad oregano</li>
-                        <li>Salt och svartpeppar efter smak</li>
+                        <li itemprop="recipeIngredient">500 g laxfilé</li>
+                        <li itemprop="recipeIngredient">3 dl couscous</li>
+                        <li itemprop="recipeIngredient">1 st paprika</li>
+                        <li itemprop="recipeIngredient">1 st rödlök</li>
+                        <li itemprop="recipeIngredient">150 g körsbärstomater</li>
+                        <li itemprop="recipeIngredient">100 g fetaost</li>
+                        <li itemprop="recipeIngredient">1 msk olivolja</li>
+                        <li itemprop="recipeIngredient">1 st citron</li>
+                        <li itemprop="recipeIngredient">1 tsk torkad oregano</li>
+                        <li itemprop="recipeIngredient">Salt och svartpeppar efter smak</li>
                     </ul>
 
                     <h3>Till servering</h3>
 
                     <ul>
-                        <li>Färsk persilja</li>
-                        <li>Citronklyftor</li>
+                        <li itemprop="recipeIngredient">Färsk persilja</li>
+                        <li itemprop="recipeIngredient">Citronklyftor</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Instruktioner</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Förbered couscousen enligt anvisningen på förpackningen och låt den stå under lock.</li>
                         <li>Skär laxen i portionsbitar och krydda med oregano, salt och svartpeppar.</li>
                         <li>Hetta upp olivoljan i en stekpanna och stek laxen på medelhög värme i några minuter på varje sida tills den är genomstekt.</li>
@@ -97,10 +101,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på stekt ris med kycklingfärs, broccoli, ingefära och soja från Giga Bite.">
         <title>Stekt ris med kycklingfärs och broccoli</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,27 +35,27 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
             
-            <h1>Stekt ris med kycklingfärs och broccoli</h1>
+            <h1 itemprop="name">Stekt ris med kycklingfärs och broccoli</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/Gym_kyckling.jpg" 
                     alt="Stekt ris med kycklingfärs och broccoli"
                 >
 
-                <p>
+                <p itemprop="description">
                     En snabb, smakrik och proteinrik vardagsrätt med stekt ris, saftig kycklingfärs, krispig broccoli och asiatiska smaker av ingefära och soja.
                 </p>
             </section>
 
             <p>
-                Förberedelse: 10 minuter | Tillagning: 20 minuter | Total tid: 30 minuter | Svårighetsgrad: Enkel | 4 portioner
+                Förberedelse: <time itemprop="prepTime" datetime="PT10M">10 minuter</time> | Tillagning: <time itemprop="cookTime" datetime="PT20M">20 minuter</time> | Total tid: <time itemprop="totalTime" datetime="PT30M">30 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Enkel</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
-            <p>
-                Näringsvärde per portion: 495 kcal | Protein: 35 g
+            <p itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                Näringsvärde per portion:<span itemprop="calories"> 495 kcal</span> | <span itemprop="proteinContent">Protein: 35 g</span>
             </p>
 
             <div>
@@ -59,30 +63,30 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>500 g Kycklingfärs</li>
-                        <li>2 dl Ris (okokt)</li>
-                        <li>250 g Färsk broccoli</li>
-                        <li>1 st Purjolök</li>
-                        <li>2 st Vitlöksklyftor</li>
-                        <li>1 msk Färsk riven ingefära</li>
-                        <li>2 msk Japansk soja</li>
-                        <li>1 tsk Sambal oelek (eller efter smak)</li>
-                        <li>2 msk Matolja till stekning</li>
-                        <li>Salt och peppar efter smak</li>
+                        <li itemprop="recipeIngredient">500 g Kycklingfärs</li>
+                        <li itemprop="recipeIngredient">2 dl Ris (okokt)</li>
+                        <li itemprop="recipeIngredient">250 g Färsk broccoli</li>
+                        <li itemprop="recipeIngredient">1 st Purjolök</li>
+                        <li itemprop="recipeIngredient">2 st Vitlöksklyftor</li>
+                        <li itemprop="recipeIngredient">1 msk Färsk riven ingefära</li>
+                        <li itemprop="recipeIngredient">2 msk Japansk soja</li>
+                        <li itemprop="recipeIngredient">1 tsk Sambal oelek (eller efter smak)</li>
+                        <li itemprop="recipeIngredient">2 msk Matolja till stekning</li>
+                        <li itemprop="recipeIngredient">Salt och peppar efter smak</li>
                     </ul>
 
                     <h3>Till servering</h3>
 
                     <ul>
-                        <li>2 msk Rostade sesamfrön</li>
-                        <li>1 st Lime (i klyftor)</li>
+                        <li itemprop="recipeIngredient">2 msk Rostade sesamfrön</li>
+                        <li itemprop="recipeIngredient">1 st Lime (i klyftor)</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Instruktioner</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Koka riset enligt anvisningen på förpackningen och låt det svalna något (gärna kallt/dagsgammalt ris).</li>
                         <li>Skär broccolin i små buketter och skiva stammen tunt. Skala och finhacka vitlöken.</li>
                         <li>Hetta upp 1 msk olja i en stor stekpanna eller wok. Fräs vitlök och broccoli i några minuter tills den mjuknat lite men fortfarande har krisp. Ta upp och lägg på en tallrik.</li>
@@ -96,10 +100,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på klassisk spaghetti med smakrik köttfärssås, tomat, vitlök och örter från Giga Bite.">
         <title>Spaghetti med köttfärssås</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,23 +35,23 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
 
-            <h1>Spaghetti med köttfärssås</h1>
+            <h1 itemprop="name">Spaghetti med köttfärssås</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/kottfarssas.jpeg" 
                     alt="Spaghetti med köttfärssås"
                 >
 
-                <p>
+                <p itemprop="description">
                     En klassisk spaghetti med smakrik köttfärssås som passar perfekt till en enkel och god middag.
                 </p>
             </section>
 
             <p>
-                Tillagning: cirka 30 minuter | Svårighetsgrad: Lätt | 4 portioner
+                Tillagning: <time itemprop="cookTime" datetime="PT30M">cirka 30 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Lätt</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
             <div>
@@ -55,27 +59,27 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>400 g spaghetti</li>
-                        <li>500 g köttfärs, alternativt vegetariskt färs</li>
-                        <li>1 gul lök</li>
-                        <li>2 vitlöksklyftor</li>
-                        <li>1 burk krossade tomater (400 g)</li>
-                        <li>2 msk tomatpuré</li>
-                        <li>1 dl grädde eller crème fraîche</li>
-                        <li>1 tsk oregano</li>
-                        <li>1 tsk basilika</li>
-                        <li>1/2 tsk salt</li>
-                        <li>1/2 tsk svartpeppar</li>
-                        <li>1 msk olivolja</li>
-                        <li>1/2 dl vatten eller buljong</li>
-                        <li>Parmesan eller riven ost till servering</li>
+                        <li itemprop="recipeIngredient">400 g spaghetti</li>
+                        <li itemprop="recipeIngredient">500 g köttfärs, alternativt vegetariskt färs</li>
+                        <li itemprop="recipeIngredient">1 gul lök</li>
+                        <li itemprop="recipeIngredient">2 vitlöksklyftor</li>
+                        <li itemprop="recipeIngredient">1 burk krossade tomater (400 g)</li>
+                        <li itemprop="recipeIngredient">2 msk tomatpuré</li>
+                        <li itemprop="recipeIngredient">1 dl grädde eller crème fraîche</li>
+                        <li itemprop="recipeIngredient">1 tsk oregano</li>
+                        <li itemprop="recipeIngredient">1 tsk basilika</li>
+                        <li itemprop="recipeIngredient">1/2 tsk salt</li>
+                        <li itemprop="recipeIngredient">1/2 tsk svartpeppar</li>
+                        <li itemprop="recipeIngredient">1 msk olivolja</li>
+                        <li itemprop="recipeIngredient">1/2 dl vatten eller buljong</li>
+                        <li itemprop="recipeIngredient">Parmesan eller riven ost till servering</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Gör så här</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Koka spaghetti enligt paketets anvisningar.</li>
                         <li>Hetta upp oljan i en panna och fräs löken i 3–4 minuter.</li>
                         <li>Lägg i köttfärsen och stek tills den blir genomstekt. Bryt den med en sked.</li>
@@ -89,10 +93,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>

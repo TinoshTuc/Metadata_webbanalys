@@ -10,6 +10,10 @@
         <!-- End Google Tag Manager -->
 
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta 
+        name="description"
+        content="Recept på cajungrillad lax med sötpotatismos och frisk salsa från Giga Bite.">
         <title>Cajungrillad lax med sötpotatismos och frisk salsa</title>
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../recept.css">
@@ -31,27 +35,27 @@
             </a>
         </header>
 
-        <main>
+        <main itemscope itemtype="http://schema.org/Recipe">
             
-            <h1>Cajungrillad lax med sötpotatismos och frisk salsa</h1>
+            <h1 itemprop="name">Cajungrillad lax med sötpotatismos och frisk salsa</h1>
 
             <section>
-                <img 
+                <img itemprop="image"
                     src="../bilder/Gym_lax.jpg" 
                     alt="Cajungrillad lax med sötpotatismos och frisk salsa"
                 >
 
-                <p>
+                <p itemprop="description">
                     En saftig och smakrik cajungrillad lax med sötpotatismos och frisk salsa, serverad med nykokt potatis och en krämig tomatsås. En klassisk vardagsrätt som är enkel att laga.
                 </p>
             </section>
 
             <p>
-                Förberedelse: 15 minuter | Tillagning: 20 minuter | Total tid: 35 minuter | Svårighetsgrad: Enkel | 4 portioner
+                Förberedelse: <time itemprop="prepTime" datetime="PT15M">15 minuter</time> | Tillagning: <time itemprop="cookTime" datetime="PT20M">20 minuter</time> | Total tid: <time itemprop="totalTime" datetime="PT35M">35 minuter</time> | Svårighetsgrad:<span itemprop="recipeCategory"> Enkel</span> | <span itemprop="recipeYield">4 portioner</span>
             </p>
 
-            <p>
-                Näringsvärde per portion: 530 kcal | Protein: 34 g
+            <p itemprop="nutrition" itemscope itemtype="https://schema.org/NutritionInformation">
+                Näringsvärde per portion:<span itemprop="calories"> 530 kcal</span> | <span itemprop="proteinContent">Protein: 34 g</span>
             </p>
 
             <div>
@@ -59,38 +63,38 @@
                     <h2>Ingredienser</h2>
 
                     <ul>
-                        <li>600 g Laxfilé (i 4 portionsbitar)</li>
-                        <li>1 msk Cajunkrydda</li>
-                        <li>1 msk Rapsolja (till stekning/pensling)</li>
-                        <li>Flingsalt och svartpeppar</li>
+                        <li itemprop="recipeIngredient">600 g Laxfilé (i 4 portionsbitar)</li>
+                        <li itemprop="recipeIngredient">1 msk Cajunkrydda</li>
+                        <li itemprop="recipeIngredient">1 msk Rapsolja (till stekning/pensling)</li>
+                        <li itemprop="recipeIngredient">Flingsalt och svartpeppar</li>
                     </ul>
 
                     <h3>Sötpotatismos</h3>
 
                     <ul>
-                        <li>800 g Sötpotatis</li>
-                        <li>25 g Smör</li>
-                        <li>0,5 dl Mjölk (valfritt, för lösare konsistens)</li>
-                        <li>Salt och peppar efter smak</li>
+                        <li itemprop="recipeIngredient">800 g Sötpotatis</li>
+                        <li itemprop="recipeIngredient">25 g Smör</li>
+                        <li itemprop="recipeIngredient">0,5 dl Mjölk (valfritt, för lösare konsistens)</li>
+                        <li itemprop="recipeIngredient">Salt och peppar efter smak</li>
                     </ul>
 
                     <h3>Frisk salsa</h3>
 
                     <ul>
-                        <li>1 st Mango (eller 250 g tinad fryst mango i tärningar)</li>
-                        <li>1 st Röd chili (urkärnad och finhackad)</li>
-                        <li>1 st Avokado (tärnad)</li>
-                        <li>1 kruka Färsk koriander</li>
-                        <li>1 st Lime (pressad saft)</li>
-                        <li>1 msk Olivolja</li>
-                        <li>En nypa salt</li>
+                        <li itemprop="recipeIngredient">1 st Mango (eller 250 g tinad fryst mango i tärningar)</li>
+                        <li itemprop="recipeIngredient">1 st Röd chili (urkärnad och finhackad)</li>
+                        <li itemprop="recipeIngredient">1 st Avokado (tärnad)</li>
+                        <li itemprop="recipeIngredient">1 kruka Färsk koriander</li>
+                        <li itemprop="recipeIngredient">1 st Lime (pressad saft)</li>
+                        <li itemprop="recipeIngredient">1 msk Olivolja</li>
+                        <li itemprop="recipeIngredient">En nypa salt</li>
                     </ul>
                 </section>
 
                 <section>
                     <h2>Instruktioner</h2>
 
-                    <ol>
+                    <ol itemprop="recipeInstructions">
                         <li>Skala sötpotatisen och skär den i mindre bitar. Koka i lättsaltat vatten i ca 15–20 minuter tills den är helt mjuk.</li>
 
                         <li>Gör salsan: Tärna mango och avokado. Finhacka chili och koriander. Blanda allt i en skål tillsammans med pressad limesaft, olivolja och en nypa salt. Ställ svalt.</li>
@@ -107,10 +111,10 @@
             </div>
         </main>
 
-        <footer>
-            <p>&copy; 2026 Giga Bite. Alla rättigheter förbehållna.</p>
+        <footer itemscope itemtype="http://schema.org/Organization"> 
+            <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
             <p>
-                Kontakt: Info@gigabite.se | Adress: Giga Bite AB, Storgatan 123, 123 45 Stockholm | Telefon: 080-132 546 87
+                Kontakt:<span itemprop="email">Info@gigabite.se</span> | Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span> | Telefon: <span itemprop="telephone">080-132 546 87</span>
             </p>
         </footer>
     </body>
