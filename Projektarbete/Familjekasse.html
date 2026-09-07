@@ -14,6 +14,7 @@
     <title>Familjekassen | Giga Bite</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bags.css">
+    <script src="kassar.js" defer></script>
 </head>
 
 <body itemscope itemtype="https://schema.org/Product">
@@ -100,7 +101,7 @@
         </nav>
 
 
-        <form data-price="899" data-item-id="family_bag" data-item-name="Familjekassen">
+        <form name="form_family_bag" action="purchase">
 
             <h2>Köp Familjekassen</h2>
 
@@ -112,6 +113,8 @@
                 <meta itemprop="priceCurrency" content="SEK">
                 Pris: <strong id="pris" itemprop="price">899 kr</strong>
             </p>
+
+            <input type="hidden" name="quantity" id="quantity-input" value="1">
 
             <div class="quantity">
 
@@ -210,10 +213,6 @@
         Telefon: <span itemprop="telephone">080-132 546 87</span>
     </p>
 </footer>
-
-    <script src="kassar.js">
-
-</script>
 
 </body>
 
