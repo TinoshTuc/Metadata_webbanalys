@@ -19,6 +19,7 @@ main article img {
 }
 
 .newsletter-modal {
+    position: relative;
     border: none;
     border-radius: 0.75rem;
     padding: 0;
@@ -32,21 +33,23 @@ main article img {
 }
 
 .newsletter-modal__content {
-    padding: 2rem;
+    padding: 2.5rem 2rem 2rem;
     text-align: center;
-    position: relative;
     background-color: #ffffff;
 }
 
 .newsletter-modal__close {
     position: absolute;
-    top: 0.6rem;
-    right: 0.8rem;
+    top: 0.75rem;
+    right: 0.9rem;
+    z-index: 1;
     padding: 0;
+    border: none;
     background: none;
     color: #555555;
     font-size: 1.6rem;
     line-height: 1;
+    cursor: pointer;
 }
 
 .newsletter-modal__close:hover {
@@ -54,10 +57,31 @@ main article img {
     color: #000000;
 }
 
-.newsletter-modal input {
+.newsletter-modal label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: bold;
+}
+
+.newsletter-modal input[type="email"] {
     width: 100%;
     padding: 0.7rem;
-    margin: 0.5rem 0 1rem;
+    margin-bottom: 1rem;
     border: 0.1rem solid #cccccc;
     border-radius: 0.3rem;
+}
+
+.newsletter-modal input[type="submit"] {
+    width: 100%;
+    padding: 0.7rem 1rem;
+    background-color: #f59a23;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.newsletter-modal input[type="submit"]:hover {
+    background-color: #d97f0d;
 }

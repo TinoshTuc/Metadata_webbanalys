@@ -13,6 +13,7 @@
     <title>Giga Bite | Matkassar</title>
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="index_style.css">
+    <script src="index.js" defer></script>
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -69,11 +70,12 @@
     </footer>
 
     <!-- POP-UP BÖRJAR HÄR --><!-- POP-UP BÖRJAR HÄR --><!-- POP-UP BÖRJAR HÄR --><!-- POP-UP BÖRJAR HÄR -->
-    <dialog class="newsletter-modal">
-        <form class="newsletter-modal__content" method="dialog">
-            <button class="newsletter-modal__close" type="button" aria-label="Stäng popup">
-                &times;
-            </button>
+    <dialog id="newsletter_popup" class="newsletter-modal">
+        <button class="newsletter-modal__close" type="button" aria-label="Stäng popup">
+            &times;
+        </button>
+
+        <form name="newsletter_signup" class="newsletter-modal__content" method="dialog">
             <h2>Få 20% rabatt!</h2>
 
             <p> Prenumerera på vårt nyhetsbrev och få <strong>20% rabatt</strong> på din första matkasse från Giga Bite.</p>
@@ -85,21 +87,9 @@
                 placeholder="Ange din e-postadress"
                 required 
             >
-            <button type="submit">Hämta rabattkod</button>
+            <input type="submit" value="Hämta rabattkod" />
         </form>
     </dialog>
-    <script>
-        const modal = document.querySelector(".newsletter-modal");
-        const closeButton = document.querySelector(".newsletter-modal__close");
-
-        setTimeout(function () {
-            modal.showModal();
-        }, 1500);
-
-        closeButton.addEventListener("click", function () {
-            modal.close();
-        });
-    </script>
     <!-- POP-UP SLUTAR HÄR --><!-- POP-UP SLUTAR HÄR --><!-- POP-UP SLUTAR HÄR --><!-- POP-UP SLUTAR HÄR -->
 
 </body>
