@@ -99,7 +99,7 @@
         </nav>
 
 
-        <form>
+        <form data-price="749" data-item-id="fast_bag" data-item-name="Snabbkassen">
 
             <h2>Köp Snabbkassen</h2>
 
@@ -211,48 +211,7 @@
 </footer>
 
 
-    <script>
-    let quantity = 1;
-    const pricePerBag = 749;
-
-    function updateBag() {
-        document.getElementById("antal").textContent = quantity;
-        document.getElementById("pris").textContent =
-            (quantity * pricePerBag) + " kr";
-    }
-
-    function increaseQuantity() {
-        quantity++;
-        updateBag();
-    }
-
-    function decreaseQuantity() {
-        if (quantity > 1) {
-            quantity--;
-            updateBag();
-        }
-    }
-
-    function handlePurchase() {
-        const item = {
-            item_id: "quick_bag",
-            item_name: "Snabbkassen",
-            item_brand: "Giga Bite",
-            item_category: "Matkassar",
-            price: pricePerBag,
-            quantity: quantity
-        }
-        const ecommerce = {
-            transaction_id: "GB004",
-            currency: "SEK",
-            items: [item]
-        }
-
-        ecommerce.value = item.quantity * item.price
-        dataLayer.push({ ecommerce: null })
-        dataLayer.push({ event: "purchase", ecommerce: ecommerce })
-    }
-       
+    <script src="kassar.js">
 </script>
 
 </body>

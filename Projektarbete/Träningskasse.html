@@ -108,7 +108,7 @@
         </nav>
 
 
-        <form>
+        <form data-price="829" data-item-id="training_bag" data-item-name="Träningskassen">
 
             <h2>Köp Träningskassen</h2>
 
@@ -220,48 +220,7 @@
 </footer>
 
 
-    <script>
-    let antal = 1;
-    const prisPerKasse = 829;
-
-    function uppdateraKassa() {
-        document.getElementById("antal").textContent = antal;
-        document.getElementById("pris").textContent =
-            (antal * prisPerKasse) + " kr";
-    }
-
-    function okaAntal() {
-        antal++;
-        uppdateraKassa();
-    }
-
-    function minskaAntal() {
-        if (antal > 1) {
-            antal--;
-            uppdateraKassa();
-        }
-    }
-
-    function handlePurchase() {
-        const item = {
-            item_id: "training_bag",
-            item_name: "Träningskassen",
-            item_brand: "Giga Bite",
-            item_category: "Matkassar",
-            price: prisPerKasse,
-            quantity: antal
-        }
-        const ecommerce = {
-            transaction_id: "GB003",
-            currency: "SEK",
-            items: [item]
-        }
-
-        ecommerce.value = item.quantity * item.price
-        dataLayer.push({ ecommerce: null })
-        dataLayer.push({ event: "purchase", ecommerce: ecommerce })
-    }
-       
+    <script src="kassar.js">
 </script>
 
 </body>
