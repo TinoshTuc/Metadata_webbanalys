@@ -1,4 +1,4 @@
-let antal = 1;
+let quantity = 1;
 
 const fromToItems = {
     "from_family_bag": {
@@ -40,7 +40,6 @@ const item = formToItems[form.name];
 
 function updateBag() {
     document.getElementById("antal").textContent = quantity;
-    document.getElementById("quantity_input").value = quantity;
     document.getElementById("pris").textContent = (quantity * item.price) + " kr";
 }
 
