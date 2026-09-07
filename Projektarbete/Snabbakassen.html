@@ -2,6 +2,13 @@
 <html lang="sv">
 
 <head>
+     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PVJCHMGQ');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Snabbkassen | Giga Bite</title>
@@ -9,9 +16,14 @@
     <link rel="stylesheet" href="bags.css">
 </head>
 
-<body itemscope itemtype="http://schema.org/Product">
+<body itemscope itemtype="https://schema.org/Product">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVJCHMGQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header>
+
         <h1 itemprop="name">Snabbkassen</h1>
 
         <a href="index.html">
@@ -22,12 +34,14 @@
             Snabba, smakrika och enkla middagar som kan lagas
             på under 30 minuter. 4 middagar för 4 personer.
         </p>
+
     </header>
 
 
     <main>
 
         <nav>
+
             <h2>Recept i Snabbkassen</h2>
 
             <ul>
@@ -37,43 +51,51 @@
                         <strong itemprop="name">Shrimp Fried Rice</strong>
                         <span>(47 g protein | 560 kcal)</span>
                     </a>
+
                     <p itemprop="description">
                         En smakrik och snabb rätt med räkor, grönsaker
                         och ris som är enkel att laga.
                     </p>
                 </li>
 
+                
                 <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
                     <a itemprop="url" href="Recept/recept_kycklingpasta_pesto.html">
                         <strong itemprop="name">Krämig kycklingpasta med pesto</strong>
                         <span>(42 g protein | 620 kcal)</span>
                     </a>
+
                     <p itemprop="description">
                         En smakrik och snabb rätt med kyckling, pesto och pasta.
                     </p>
                 </li>
+
 
                 <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
                     <a itemprop="url" href="Recept/recept_lax_couscous_fetaost.html">
                         <strong itemprop="name">Lax med couscous och fetaost</strong>
                         <span>(36 g protein | 590 kcal)</span>
                     </a>
+
                     <p itemprop="description">
                         En smakrik och snabb rätt med lax, couscous och fetaost.
                     </p>
                 </li>
+
 
                 <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
                     <a itemprop="url" href="Recept/recept_nudel_biffwok.html">
                         <strong itemprop="name">Biffwok med nudlar</strong>
                         <span>(39 g protein | 570 kcal)</span>
                     </a>
+
                     <p itemprop="description">
                         En smakrik och snabb rätt med biff, wok och nudlar.
                     </p>
                 </li>
 
             </ul>
+
         </nav>
 
 
@@ -102,7 +124,7 @@
 
             <br>
 
-            <button type="button" class="buy-button">
+            <button type="button" class="buy-button" onclick="handlePurchase()">
                 Köp Snabbkassen
             </button>
 
@@ -175,42 +197,63 @@
 
 
     <footer itemscope itemtype="https://schema.org/Organization">
-        <b>Följ oss på sociala medier:</b>
-        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank" itemprop="sameAs">
-            <img src="bilder/youtube.png" alt="YouTube" style="width: 24px; height: auto; vertical-align: middle; margin-left: 6px;">
-        </a>
-        <hr>
-        <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
-        <p>
-            Kontakt: <span itemprop="email">Info@gigabite.se</span> | 
-            Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>, <span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span></span> | 
-            Telefon: <span itemprop="telephone">080-132 546 87</span>
-        </p>
-    </footer>
+    <b>Följ oss på sociala medier:</b>
+    <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank" itemprop="sameAs">
+        <img src="bilder/youtube.png" alt="YouTube" style="width: 24px; height: auto; vertical-align: middle; margin-left: 6px;">
+    </a>
+    <hr>
+    <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
+    <p>
+        Kontakt: <span itemprop="email">Info@gigabite.se</span> | 
+        Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span>  | 
+        Telefon: <span itemprop="telephone">080-132 546 87</span>
+    </p>
+</footer>
 
 
     <script>
-        let antal = 1;
-        const prisPerKasse = 749;
+    let quantity = 1;
+    const pricePerBag = 749;
 
-        function uppdateraKassa() {
-            document.getElementById("antal").textContent = antal;
-            document.getElementById("pris").textContent =
-                (antal * prisPerKasse) + " kr";
+    function updateBag() {
+        document.getElementById("antal").textContent = quantity;
+        document.getElementById("pris").textContent =
+            (quantity * pricePerBag) + " kr";
+    }
+
+    function increaseQuantity() {
+        quantity++;
+        updateBag();
+    }
+
+    function decreaseQuantity() {
+        if (quantity > 1) {
+            quantity--;
+            updateBag();
+        }
+    }
+
+    function handlePurchase() {
+        const item = {
+            item_id: "quick_bag",
+            item_name: "Snabbkassen",
+            item_brand: "Giga Bite",
+            item_category: "Matkassar",
+            price: pricePerBag,
+            quantity: quantity
+        }
+        const ecommerce = {
+            transaction_id: "GB004",
+            currency: "SEK",
+            items: [item]
         }
 
-        function okaAntal() {
-            antal++;
-            uppdateraKassa();
-        }
-
-        function minskaAntal() {
-            if (antal > 1) {
-                antal--;
-                uppdateraKassa();
-            }
-        }
-    </script>
+        ecommerce.value = item.quantity * item.price
+        dataLayer.push({ ecommerce: null })
+        dataLayer.push({ event: "purchase", ecommerce: ecommerce })
+    }
+       
+</script>
 
 </body>
 

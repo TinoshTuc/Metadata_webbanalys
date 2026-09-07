@@ -1,8 +1,14 @@
-</html>
 <!DOCTYPE html>
 <html lang="sv">
 
 <head>
+     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PVJCHMGQ');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Familjekassen | Giga Bite</title>
@@ -10,10 +16,16 @@
     <link rel="stylesheet" href="bags.css">
 </head>
 
-<body itemscope itemtype="http://schema.org/Product">
+<body itemscope itemtype="https://schema.org/Product">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVJCHMGQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header>
+
         <h1 itemprop="name">Familjekassen</h1>
-             
+
         <a href="index.html">
             <img itemprop="image" src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
         </a>
@@ -23,57 +35,75 @@
             Fyra utvalda maträtter som passar perfekt
             för veckans middagar. 4 middagar för 4 personer.
         </p>
+
     </header>
 
+
     <main>
+
         <nav>
+
             <h2>Recept i Familjekassen</h2>
+
             <ul>
+
                 <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
                     <a itemprop="url" href="recept/recept_kyckling_gryta.html">
                         <strong itemprop="name">Kycklinggryta med ris</strong>
                         <span>(36 g protein | 650 kcal)</span>
                     </a>
+
                     <p itemprop="description">
                         En smakrik kycklinggryta med ris som är enkel
                         att laga och passar hela familjen.
                     </p>
                 </li>
 
+
                 <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
                     <a itemprop="url" href="recept/recept_spagetti_kottfarssas.html">
                         <strong itemprop="name">Spaghetti och köttfärssås</strong>
                         <span>(30 g protein | 550 kcal)</span>
                     </a>
+
                     <p itemprop="description">
                         En klassisk och familjevänlig köttfärssås som är enkel att laga.
                     </p>
                 </li>
+
 
                 <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
                     <a itemprop="url" href="recept/recept_kottbullar_potatis_brunsas.html">
                         <strong itemprop="name">Köttbullar med potatis och brunsås</strong>
                         <span>(35 g protein | 600 kcal)</span>
                     </a>
+
                     <p itemprop="description">
                         En klassisk familjemiddag med potatis och brunsås.
                     </p>
                 </li>
+
 
                 <li itemprop="hasPart" itemscope itemtype="http://schema.org/Recipe">
                     <a itemprop="url" href="recept/recept_oxfile_potatisgratang_rodvinsas_sparris.html">
                         <strong itemprop="name">Oxfilé med potatisgratäng</strong>
                         <span>(32 g protein | 580 kcal)</span>
                     </a>
+
                     <p itemprop="description">
                         En elegant middag med oxfilé, potatisgratäng och rödvinssås.
                     </p>
                 </li>
+
             </ul>
+
         </nav>
 
+
         <form>
+
             <h2>Köp Familjekassen</h2>
+
             <p>
                 I Familjekassen ingår veckans fyra maträtter.
             </p>
@@ -84,24 +114,32 @@
             </p>
 
             <div class="quantity">
+
                 <button type="button" onclick="minskaAntal()">−</button>
 
                 <span id="antal">1</span> kasse
 
                 <button type="button" onclick="okaAntal()">+</button>
+
             </div>
 
             <br>
 
-            <button type="button" class="buy-button">
+            <button type="button" class="buy-button" onclick="handlePurchase()">
                 Köp Familjekassen
             </button>
+
         </form>
+
     </main>
 
+
     <aside>
+
         <nav>
+
             <h2>Andra recept</h2>
+
             <ul>
 
                 <li>
@@ -153,45 +191,71 @@
                 </li>
 
             </ul>
+
         </nav>
+
     </aside>
 
+
     <footer itemscope itemtype="https://schema.org/Organization">
-        <b>Följ oss på sociala medier:</b>
-        <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank" itemprop="sameAs">
-            <img src="bilder/youtube.png" alt="YouTube" style="width: 24px; height: auto; vertical-align: middle; margin-left: 6px;">
-        </a>
-        <hr>
-        <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
-        <p>
-            Kontakt: <span itemprop="email">Info@gigabite.se</span> | 
-            Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>, <span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span></span> | 
-            Telefon: <span itemprop="telephone">080-132 546 87</span>
-        </p>
-    </footer>
+    <b>Följ oss på sociala medier:</b>
+    <a href="https://www.youtube.com/watch?v=Aq5WXmQQooo" target="_blank" itemprop="sameAs">
+        <img src="bilder/youtube.png" alt="YouTube" style="width: 24px; height: auto; vertical-align: middle; margin-left: 6px;">
+    </a>
+    <hr>
+    <p>&copy; 2026 <span itemprop="name">Giga Bite</span>. Alla rättigheter förbehållna.</p>
+    <p>
+        Kontakt: <span itemprop="email">Info@gigabite.se</span> | 
+        Adress: <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">Giga Bite AB, <span itemprop="streetAddress">Storgatan 123</span>,<span itemprop="postalCode">123 45</span> <span itemprop="addressLocality">Stockholm</span> </span>  | 
+        Telefon: <span itemprop="telephone">080-132 546 87</span>
+    </p>
+</footer>
+
 
     <script>
-        let antal = 1;
-        const prisPerKasse = 899;
+    let quantity = 1;
+    const pricePerBag = 899;
 
-        function uppdateraKassa() {
-            document.getElementById("antal").textContent = antal;
-            document.getElementById("pris").textContent =
-                (antal * prisPerKasse) + " kr";
+    function updateBag() {
+        document.getElementById("antal").textContent = quantity;
+        document.getElementById("pris").textContent =
+            (quantity * pricePerBag) + " kr";
+    }
+
+    function increaseQuantity() {
+        quantity++;
+        updateBag();
+    }
+
+    function decreaseQuantity() {
+        if (quantity > 1) {
+            quantity--;
+            updateBag();
+        }
+    }
+
+    function handlePurchase() {
+        const item = {
+            item_id: "family_bag",
+            item_name: "Familjekassen",
+            item_brand: "Giga Bite",
+            item_category: "Matkassar",
+            price: pricePerBag,
+            quantity: quantity
+        }
+        const ecommerce = {
+            transaction_id: "GB005",
+            currency: "SEK",
+            items: [item]
         }
 
-        function okaAntal() {
-            antal++;
-            uppdateraKassa();
-        }
+        ecommerce.value = item.quantity * item.price
+        dataLayer.push({ ecommerce: null })
+        dataLayer.push({ event: "purchase", ecommerce: ecommerce })
+    }
+       
+</script>
 
-        function minskaAntal() {
-            if (antal > 1) {
-                antal--;
-                uppdateraKassa();
-            }
-        }
-    </script>
 </body>
 
 </html>
