@@ -2,6 +2,13 @@
 <html lang="sv">
 
 <head>
+     <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PVJCHMGQ');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vegetariska kassen | Giga Bite</title>
@@ -9,13 +16,17 @@
     <link rel="stylesheet" href="bags.css">
 </head>
 
-<body itemscope itemtype="http://schema.org/Product">
+<body itemscope itemtype="https://schema.org/Product">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PVJCHMGQ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <header>
 
         <h1 itemprop="name">Vegetariska kassen</h1>
 
-           <a href="Index.html">
+           <a href="index.html">
         <img itemprop="image" src="bilder/logotyp.jpg" alt="Giga Bite logotyp">
             </a>
 
@@ -107,17 +118,16 @@
 
             <div class="quantity">
 
-                <button type="button" onclick="minskaAntal()">−</button>
+                <button type="button" onclick="decreaseQuantity()">−</button>
 
                 <span id="antal">1</span> kasse
 
-                <button type="button" onclick="okaAntal()">+</button>
-
+                <button type="button" onclick="increaseQuantity()">+</button>
             </div>
 
             <br>
 
-            <button type="button" class="buy-button">
+            <button type="button" class="buy-button" onclick="handlePurchase()">
                 Köp Vegetariska kassen
             </button>
 
@@ -205,26 +215,47 @@
 
 
     <script>
-    let antal = 1;
-    const prisPerKasse = 749;
+    let quantity = 1;
+    const pricePerBag = 749;
 
-    function uppdateraKassa() {
-        document.getElementById("antal").textContent = antal;
+    function updateBag() {
+        document.getElementById("antal").textContent = quantity;
         document.getElementById("pris").textContent =
-            (antal * prisPerKasse) + " kr";
+            (quantity * pricePerBag) + " kr";
     }
 
-    function okaAntal() {
-        antal++;
-        uppdateraKassa();
+    function increaseQuantity() {
+        quantity++;
+        updateBag();
     }
 
-    function minskaAntal() {
-        if (antal > 1) {
-            antal--;
-            uppdateraKassa();
+    function decreaseQuantity() {
+        if (quantity > 1) {
+            quantity--;
+            updateBag();
         }
     }
+
+    function handlePurchase() {
+        const item = {
+            item_id: "vegetarian_bag",
+            item_name: "Vegetariska kassen",
+            item_brand: "Giga Bite",
+            item_category: "Matkassar",
+            price: pricePerBag,
+            quantity: quantity
+        }
+        const ecommerce = {
+            transaction_id: "GB002",
+            currency: "SEK",
+            items: [item]
+        }
+
+        ecommerce.value = item.quantity * item.price
+        dataLayer.push({ ecommerce: null })
+        dataLayer.push({ event: "purchase", ecommerce: ecommerce })
+    }
+       
 </script>
 
 </body>
