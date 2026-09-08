@@ -1,6 +1,7 @@
 setTimeout(() => {
-            newsletter_popup.showModal();
-        }, 5000);
+    newsletter_popup.showModal();
+}, 2000);
 
-newsletter_popup.getElementsByTagName("button")
-document.forms.newsletter_signup.getElementsByTagName("button")[0].onclick = newsletter_popup.close
+newsletter_popup.getElementsByTagName("button")[0].onclick = () => {
+    newsletter_popup.close();
+};
